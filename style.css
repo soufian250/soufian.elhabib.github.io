@@ -1,0 +1,63 @@
+body{
+    background-color: white;
+}
+.navbar{
+    border-bottom: #4a5b63 1px solid;
+    height: 50px;
+}
+
+#acceuil{
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;   
+}
+
+#main-head .home-inner{
+    padding-top: 850px;
+}
+
+#main-head .dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background: rgb(0, 0, 0, 0.5);
+}
+#under{
+    padding-top: 350px;
+}
+#under h1{
+    font-size: 50pt;
+}
+#social-links{
+    /* border-bottom: 3px solid rgba(240, 234, 234, 0.973);*/
+    height: 90px; 
+}
+.font-title{
+    font-size: 40pt;
+    font-weight: 12px;
+}
+.font-sub-title{
+    font-size: 30pt;
+}
+.paragraph{
+    line-height: 1.6;
+}
+.custom-card{
+    border: 3px solid black;
+    width: 450px;
+    height: 150px;
+}
+.scrool-img{
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px;  
+}
+#first-contact a:hover{
+    text-decoration: none;
+}
