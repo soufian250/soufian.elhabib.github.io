@@ -5,7 +5,15 @@ body{
     border-bottom: #4a5b63 1px solid;
     height: 50px;
 }
+#links a{
+    text-decoration: none;
+    color: black;
+}
 
+#links a:hover{
+    text-decoration: none;
+    color: black;
+}
 #acceuil{
     background-image: url('bg1.jpg');
     background-repeat: no-repeat;
@@ -73,7 +81,7 @@ body{
   .sub-card {
     margin: 30px auto;
     width: 360px;
-    height: 200px;
+    
     border-radius: 20px;
     cursor: pointer;
     transition: 0.4s;

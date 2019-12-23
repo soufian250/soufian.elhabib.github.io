@@ -57,11 +57,12 @@
             </div>
         </header>
 
-        <div class="d-flex justify-content-around shadow-sm rounded">
-            <div class="p-4 item-hl"><img class="pr-2" src="https://img.icons8.com/ios-glyphs/60/000000/github.png"> Github</div>
-            <div class="p-4 item-hl"><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png"> Linkdin</div>
-            <div class="p-4 item-hl"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png"> Facebook</div>
-          </div>
+        <div id="links" class="d-flex justify-content-around shadow-sm rounded">
+            <a target="_blank" href="https://github.com/soufian250"> <div class="p-4 item-hl"><img class="pr-2" src="https://img.icons8.com/ios-glyphs/60/000000/github.png"> Github</div></a>
+            <a target="_blank" href="https://www.linkedin.com/in/soufain-el-habib-3289b5155/"><div class="p-4 item-hl"><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png"> Linkdin</div></a>
+            <a target="_blank" href="#accueil"><div class="p-4 item-hl"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png"> Facebook</div></a>
+         <!-- -->
+        </div>
 
         <!-- Profil head -->
   <section id="profil" class="a-propos-section">
@@ -214,49 +215,41 @@
 
             <div class="card cards-list-test">
                 <div class="card-body sub-card">
-                    <h4 class="card-title">Card title that wraps to a new line</h4>
+                    <h4 class="card-title"> <i class="fa fa-code"></i> Ecrire du code</h4>
+                    <p class="card-text">En tant que développeur, j'en tape du code.. Je passe des heures, des journées, des nuits entières à taper du code pour que cela fonctionne !</p>
+                </div>
+            </div>
+            <div class="card cards-list-test mb-5">
+                <div class="card-body sub-card">
+                    <h4 class="card-title"><i class="fa fa-sitemap"></i> Site Web</h4>
+                    <p class="card-text">Je crée des sites web, que ce soit pour des projets personnels ou bien pour des clients tout en restant à l'écoute des nouvelles technologies.</p>
+                </div>
+            </div>
+            <div class="card cards-list-test">
+                <div class="card-body sub-card">
+                    <h4 class="card-title"><i class="fa fa-question"></i> Assistance</h4>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
                         is a little bit longer.</p>
                 </div>
             </div>
             <div class="card cards-list-test">
                 <div class="card-body sub-card">
-                    <h4 class="card-title">Card title that wraps to a new line</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                        is a little bit longer.</p>
+                    <h4 class="card-title"><i class="fa fa-bug"></i> Nettoyage</h4>
+                    <p class="card-text">"Le pc rame" ; "Trop de pubs" ; "J'ai un virus qui m'empêche d'utiliser mon ordinateur comme je veux" : Vous pouvez compter sur moi, je suis là pour ça !</p>
                 </div>
             </div>
             <div class="card cards-list-test">
                 <div class="card-body sub-card">
-                    <h4 class="card-title">Card title that wraps to a new line</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                        is a little bit longer.</p>
+                    <h4 class="card-title"><i class="fa fa-mobile"></i> Mobile</h4>
+                    <p class="card-text">J'aime bien développer des applications diverses que ce soit pour des jeux ou des outils que l'on utilise tous les jours.</p>
                 </div>
             </div>
             <div class="card cards-list-test">
                 <div class="card-body sub-card">
-                    <h4 class="card-title">Card title that wraps to a new line</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                        is a little bit longer.</p>
+                    <h4 class="card-title"><i class="fa fa-random"></i> Autre</h4>
+                    <p class="card-text">Effectivement, l'informatique, c'est vaste et j'interviens dans plein de domaines comme, par exemple, la configuration des permissions et canaux d'un teamspeak, l'installation d'un serveur, des projets divers en communauté ou seul (notamment par l'intermédiaire de Trello), des montages audio et vidéo, la création et/ou la mise à jour d'un forum etc.</p>
                 </div>
             </div>
-            <div class="card cards-list-test">
-                <div class="card-body sub-card">
-                    <h4 class="card-title">Card title that wraps to a new line</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                        is a little bit longer.</p>
-                </div>
-            </div>
-            <div class="card cards-list-test">
-                <div class="card-body sub-card">
-                    <h4 class="card-title">Card title that wraps to a new line</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                        is a little bit longer.</p>
-                </div>
-            </div>
- 
-          
-
         </div>
        </div>
       </div>
@@ -298,19 +291,19 @@
                     <form class=" pt-4" method="get" action="">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" name="name" id="" class="form-control">
+                            <input type="text" style="background-color: #F7F7F7;" name="name" id="" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="name">Email</label>
-                            <input type="email" name="email" id="" class="form-control" placeholder="exemple@gmail.com">
+                            <input  type="email" name="email" id="" class="bg-light form-control" placeholder="exemple@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="name">Sujet</label>
-                            <input type="text" name="Sujet" id="" class="form-control">
+                            <input type="text" name="Sujet" style="background-color: #F7F7F7;" id="" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="name">Message</label>
-                            <textarea name="message" id="" class="form-control"></textarea>
+                            <textarea  name="message" id="" style="background-color: #F7F7F7;" class="form-control"></textarea>
                         </div>
                         <button class="btn btn-success btn-lg">ENVOYER</button>
                     </form>
