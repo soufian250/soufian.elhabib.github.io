@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="animate.css"> -->
+    <title>Soufian</title>
 </head>
 <body>
     <!-- Main NavBar -->
@@ -23,8 +25,9 @@
             </button>
             <div class="collapse navbar-collapse " id="collapseNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li  class="nav-item">
                         <a href="#acceuil" class="nav-link">ACCUEIL</a>
+                        <div class="line"></div>
                     </li>
                     <li class="nav-item">
                         <a href="#profil" class="nav-link">PROFIL</a>
@@ -70,8 +73,10 @@
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
-          <h1 class="display-4" id="font-title">À propos de moi</h1>
-          <h5 style="color: #E1E1E1;">___________</h5>
+            <div class="animated rollIn ">
+                <h1 class="display-4" id="font-title">À propos de moi</h1>
+                <h5 style="color: #E1E1E1;">___________</h5>
+            </div>
         </div>
       </div>
     </div>
@@ -143,17 +148,28 @@
             <h1 class="display-4 font-title" >Parcours</h1>
             <h5 style="color: #E1E1E1;">___________</h5>
             <h2 class="display-4 font-sub-title">EXPÉRIENCES PROFESSIONNELLES</h2>
+            
+            <div class="wow bounceInUp">
+                Content to Reveal Here
+            </div>
+            <section class="wow slideInLeft">SOUfian</section>
+            <section class="wow slideInRight">EL Habib</section>
+            <div class="animated rollIn delay-3s"><h1>Exemple</h1></div>
           </div>
         </div>
       </div>
 
       <div class="container">
           <div class="row">
-            <div class="col-5">
-                <div class="custom-card text-right p-2 m-2">
-                <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
-                    <h4>Sodifrance, Angers, FRANCE</h4> 
+            <div class="col-md-5">
+                <div class="animated rollIn delay-3s">
+                    <div class="custom-card text-right p-2 m-2">
+                        <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
+                        <h4>Sodifrance, Angers, FRANCE</h4> 
+                    </div>
                 </div>
+
+
                 <div class="custom-card text-right p-2 m-2" style="visibility: hidden;"></div>
                 <div class="custom-card text-right p-2 m-2">
                 <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
@@ -161,24 +177,29 @@
                 </div>
           </div>
 
-           <div class="col-2 text-center">Aujourd'hui</div>
+           <div class="col-md-2 text-center">Aujourd'hui</div>
 
-            <div class="col-5">
+            <div class="col-md-5">
                 <div style="visibility: hidden;" class="custom-card text-right p-2 m-2">
                     <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
                         <h4>Sodifrance, Angers, FRANCE</h4> 
                   </div>
 
-                  <div class="custom-card text-right p-2 m-2">
-                    <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
-                        <h4>ssssE</h4> 
-                  </div>
+                  <div class="animated fadeInUp delay-3s">
+                    <div class="custom-card text-right p-2 m-2">
+                        <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
+                        <h4>Sodifrance, Angers, FRANCE</h4> 
+                    </div>
+                </div>
                   <div class="custom-card text-right p-2 m-2" style="visibility: hidden;"></div>
 
-                  <div class="custom-card text-right p-2 m-2">
-                    <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
-                        <h4>Nice</h4> 
+                  <div class="animated fadeInRight delay-5s">
+                    <div class="custom-card text-right p-2 m-2">
+                        <h3> DÉVELOPPEMENT</h3>
+                            <h4>Nice</h4> 
+                    </div>
                   </div>
+                  
             </div>
           </div>
       </div>
@@ -192,12 +213,44 @@
             <h5 style="color: #E1E1E1;">___________</h5>
           </div>
           <div class="container">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis nulla omnis cupiditate voluptatibus delectus nostrum, ipsam amet iste minima natus eos ut, beatae totam? Harum quisquam tempore doloribus hic eos.</p>
-          </div>
+             <div class="row">
+                <div class="col-md-6">
+                    <div style="height: 30px;"><div class="progress-line" id="progress"></div></div>
+                    <div style="height: 30px;"><div class="progress-line" id="progress2"></div></div>
+                    <div style="height: 30px;"><div class="progress-line" id="progress3"></div></div>
+                  </div>
+    
+                  <div class="col-md-6">
+                    <div style="height: 30px;"><div class="progress-line" id="progress4"></div></div>
+                    <div style="height: 30px;"><div class="progress-line" id="progress5"></div></div>
+                    <div style="height: 30px;"><div class="progress-line" id="progress6"></div></div>
+                  </div>
+             </div>
+            
+            <button class="btn btn-success" onclick="showWithPercent()">Show With Percent</button>
+            <button class="btn btn-warning" onclick="showCercle()">Show Cercle</button>
+        </div>
 
           <div class="col text-center py-5">
             <h3 class="display-4 font-sub-title" >Plus de Compétances</h3>
             <h5 style="color: #E1E1E1;">___________</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><div id="progressCercle"></div><br><br><span class="m-3">C#</span></div> 
+                    <div class="col"><div id="progressCercle2"></div><br><br><span class="m-3">C#</span></div>
+                    <div class="col"> <div id="progressCercle3"></div><br><br><span class="m-3">C#</span></div>
+                    <div class="col"> <div id="progressCercle4"></div><br><br><span class="m-3">C#</span></div>
+                    <div class="col"> <div id="progressCercle5"></div><br><br><span class="m-3">C#</span></div>
+                  </div>
+
+                    <!-- <div class="col"><div class="cercleProgress " id="progressCercle"></div></div>
+                    <div class="col"><div class="cercleProgress " id="progressCercle2"></div></div>
+                    <div class="col"><div class="cercleProgress " id="progressCercle3"></div></div>
+                    <div class="col"><div class="cercleProgress " id="progressCercle4"></div></div> -->
+                            <!-- <div class="cercleProgress " id="progressCercle5"></div>
+                            <div class="cercleProgress " id="progressCercle6"></div> -->
+                </div>
+            </div>
           </div>
       </div>
   </section>
@@ -306,7 +359,7 @@
                             <label for="name">Message</label>
                             <textarea  name="message" id="" style="background-color: #F7F7F7;" class="form-control"></textarea>
                         </div>
-                        <button class="btn btn-success btn-lg">ENVOYER</button>
+                        <button onclick="show()" class="btn btn-success btn-lg">ENVOYER</button>
                     </form>
                 </div>
                 
@@ -372,8 +425,11 @@
         });
       }
     });
-
     </script>
+    <script src="app.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script> -->
+    <script src="progressbar.js"></script>
+
 
 </body>
 </html>

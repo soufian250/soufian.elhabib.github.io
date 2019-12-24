@@ -137,4 +137,59 @@ body{
     transition: 0.4s;
   }
   */
- 
+.line{
+  border-bottom: 3px solid black;
+  width: 80px; 
+  margin-top: 5px;
+}
+
+.progress-line{
+  margin: 20px;
+  width: 400px;
+  height: 10px;
+  position: relative;
+}
+
+#progressCercle {
+  margin: 20px;
+  width: 135px;
+  height: 80px;
+}
+
+#progressCercle2 {
+  margin: 20px;
+  width: 135px;
+  height: 80px;
+}
+#progressCercle3 {
+  margin: 20px;
+  width: 135px;
+  height: 80px;
+}
+
+#progressCercle4 {
+  margin: 20px;
+  width: 135px;
+  height: 80px;
+}
+
+#progressCercle5 {
+  margin: 20px;
+  width: 135px;
+  height: 80px;
+}
+
+#progressCercle6 {
+  margin: 20px;
+  width: 135px;
+  height: 80px;
+}
+
+
+
+/* .cercleProgress{
+  margin: 20px;
+  width: 135px;
+  height: 80px;
+}
+  */
