@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+
+    <!-- Scroll Links -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow.min.css">
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <!-- End scoll links -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+
+
     <!-- <link rel="stylesheet" href="animate.css"> -->
     <title>Soufian</title>
 </head>
@@ -49,7 +62,7 @@
            </div>
         </nav>
 
-        <header id="acceuil" class="">
+        <header id="acceuil" class="img-fluid">
             <div class="dark-overlay">
                 <div class="container">
                     <div class="row align-items-start" id="under">
@@ -73,23 +86,24 @@
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
-            <div class="animated rollIn ">
-                <h1 class="display-4" id="font-title">À propos de moi</h1>
-                <h5 style="color: #E1E1E1;">___________</h5>
-            </div>
+            <h1 class="display-4 aniview" id="font-title" data-av-animation="fadeInUp">À propos de moi</h1>
+            <h5 style="color: #E1E1E1;">___________</h5>
         </div>
       </div>
     </div>
     <div class="container">
         <div class="row p-4">
             <div class="col-8 ">
-                <h1 class="display-4 font-title" >OBJECTIF</h1>
-                <p class="paragraph">Ma réussite professionnelle étant mon objectif principal, je souhaite acquérir de l'expérience dans divers domaines tels que le développement d'applications lourdes et webs. Je suis capable de travailler en autonomie dans un environnement dynamique et exigeant. L'informatique a toujours été une passion et je souhaite en faire mon métier. Une forte motivation et des capacités d'analyse, de méthode et de rigueur m'aideront à forger mon avenir afin de devenir un bon développeur.</p>
-                <h1 class="display-4 font-title" >MES ACTIVITÉS</h1>
-                <p class="paragraph">Je travaille sur des projets ASP.NET MVC, en C#, en entreprise. En parallèle je fournis mon aide aux personnes qui le souhaitent que ce soit pour un nettoyage d'ordinateur, un conseil ou un dépannage. De plus, je développe des sites web (d'un simple site vitrine à un site plus complet) pour des clients en tant que micro-entrepreneur.</p>
-                
+                <div class="aniview" data-av-animation="fadeInUp">
+                    <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">OBJECTIF</h1>
+                    <p class="paragraph">Ma réussite professionnelle étant mon objectif principal, je souhaite acquérir de l'expérience dans divers domaines tels que le développement d'applications lourdes et webs. Je suis capable de travailler en autonomie dans un environnement dynamique et exigeant. L'informatique a toujours été une passion et je souhaite en faire mon métier. Une forte motivation et des capacités d'analyse, de méthode et de rigueur m'aideront à forger mon avenir afin de devenir un bon développeur.</p>
+                </div>
+                <div class="aniview" data-av-animation="fadeInUp">
+                    <h1 class="display-4 font-title" >MES ACTIVITÉS</h1>
+                    <p class="paragraph">Je travaille sur des projets ASP.NET MVC, en C#, en entreprise. En parallèle je fournis mon aide aux personnes qui le souhaitent que ce soit pour un nettoyage d'ordinateur, un conseil ou un dépannage. De plus, je développe des sites web (d'un simple site vitrine à un site plus complet) pour des clients en tant que micro-entrepreneur.</p>
+                </div>
+
                 <ul class="list-inline">
-                    
                     <li class="list-inline-item">
                         <ul class="list-unstyled">
                             <li class="pt-4">Laravel</li>
@@ -106,8 +120,8 @@
                 </ul>
             </div>
             <div class="col-sm-4">
-              <div class="card shadow-lg p-3 mb-5 bg-white ">
-                <img class="card-img-top" src="me.jpg" alt="">
+              <div class="card shadow-lg p-3 mb-5 bg-white aniview" data-av-animation="slideInRight">
+                <img class="card-img-top" src="me.jpg" alt="Thats me ^_^">
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><strong>Nom : </strong> El habib</li>
@@ -145,16 +159,9 @@
     <div class="container">
         <div class="row">
           <div class="col text-center py-5">
-            <h1 class="display-4 font-title" >Parcours</h1>
+            <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">Parcours</h1>
             <h5 style="color: #E1E1E1;">___________</h5>
-            <h2 class="display-4 font-sub-title">EXPÉRIENCES PROFESSIONNELLES</h2>
-            
-            <div class="wow bounceInUp">
-                Content to Reveal Here
-            </div>
-            <section class="wow slideInLeft">SOUfian</section>
-            <section class="wow slideInRight">EL Habib</section>
-            <div class="animated rollIn delay-3s"><h1>Exemple</h1></div>
+            <span class="display-4 font-sub-title aniview" data-av-animation="fadeInUp">EXPÉRIENCES PROFESSIONNELLES</span>
           </div>
         </div>
       </div>
@@ -162,17 +169,25 @@
       <div class="container">
           <div class="row">
             <div class="col-md-5">
-                <div class="animated rollIn delay-3s">
+
+                <div class="animated aniview small-box"  data-av-animation="fadeIn">
                     <div class="custom-card text-right p-2 m-2">
-                        <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
-                        <h4>Sodifrance, Angers, FRANCE</h4> 
+                        <h3>1</h3>
+                        <h4>france, Angers, FRANCE</h4> 
                     </div>
                 </div>
 
+                <div class="custom-card text-right p-2 m-2" style="visibility: hidden;"></div>
+
+                <div class="custom-card text-right p-2 m-2"">
+                <h3>2</h3>
+                <h4>Sodifrance, Angers, FRANCE</h4> 
+                </div>
 
                 <div class="custom-card text-right p-2 m-2" style="visibility: hidden;"></div>
-                <div class="custom-card text-right p-2 m-2">
-                <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
+
+                <div class="custom-card text-right p-2 m-2"">
+                <h3>3</h3>
                 <h4>Sodifrance, Angers, FRANCE</h4> 
                 </div>
           </div>
@@ -185,21 +200,21 @@
                         <h4>Sodifrance, Angers, FRANCE</h4> 
                   </div>
 
-                  <div class="animated fadeInUp delay-3s">
-                    <div class="custom-card text-right p-2 m-2">
-                        <h3>INGÉNIEUR ÉTUDES ET DÉVELOPPEMENT</h3>
-                        <h4>Sodifrance, Angers, FRANCE</h4> 
+                  <div class="">
+                    <div class="custom-card text-right p-2 m-2  style="border: 1px solide black;">
+                        <h3>A</h3>
+                        <h4></h4> 
                     </div>
                 </div>
                   <div class="custom-card text-right p-2 m-2" style="visibility: hidden;"></div>
 
-                  <div class="animated fadeInRight delay-5s">
+                  <div class=""></div>
                     <div class="custom-card text-right p-2 m-2">
-                        <h3> DÉVELOPPEMENT</h3>
-                            <h4>Nice</h4> 
+                        <h3>B</h3>
+                        <h4>Nice</h4> 
                     </div>
-                  </div>
-                  
+               
+
             </div>
           </div>
       </div>
@@ -340,7 +355,7 @@
           </div>
         <div class="container">
             <div class="row">
-                <div class="col-6"> <!-- Contact-->
+                <div class="col-md-6"> <!-- Contact-->
                     <h5>ENVOYEZ-MOI UN MESSAGE</h5>
                     <form class=" pt-4" method="get" action="">
                         <div class="form-group">
@@ -363,17 +378,17 @@
                     </form>
                 </div>
                 
-                <div class="col-6"> <!-- Map-->
+                <div class="col-md-6"> <!-- Map-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <strong>Telephone : </strong> 0655768886
+                            <strong>Télephone : </strong> 0655768886
                         </div>
                         
                         <div class="col-sm-6">
                             <strong>Telephone : </strong> 0655768886
                         </div>
                     </div> 
-                    <img src="Map.png" alt="map" srcset="" style="width: 600px; height: 500px;"> 
+                    <img src="Map.png" class="img-fluid" alt="map" srcset="" style="width: 600px; height: 500px;"> 
                 </div>
             </div>
         </div>
@@ -396,6 +411,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
@@ -429,6 +445,16 @@
     <script src="app.js"></script>
     <!-- <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script> -->
     <script src="progressbar.js"></script>
+
+    <!-- Scroll Links  -->
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <script type="text/javascript" src="jquery-aniview-master/dist/jquery.aniview.js"></script>
+   
+    <script  src="js/script.js"></script>
+    <!-- End Links -->
 
 
 </body>

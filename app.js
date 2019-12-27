@@ -257,21 +257,21 @@ function AffectProgress5(percent) {
 // Progress Cercle 
 
 
-function showCercle() {
- var percent=0.8;
- var percent2=0.9;
- var percent3=0.75;
- var percent4=0.85;
- var percent5=0.65;
- var percent6=0.87;
- AffectPercentCercle(percent);
- AffectPercentCercle2(percent2);
- AffectPercentCercle3(percent3);
- AffectPercentCercle4(percent4);
- AffectPercentCercle5(percent5);
- AffectPercentCercle6(percent6);
+// function showCercle() {
+//  var percent=0.8;
+//  var percent2=0.9;
+//  var percent3=0.75;
+//  var percent4=0.85;
+//  var percent5=0.65;
+//  var percent6=0.87;
+//  AffectPercentCercle(percent);
+//  AffectPercentCercle2(percent2);
+//  AffectPercentCercle3(percent3);
+//  AffectPercentCercle4(percent4);
+//  AffectPercentCercle5(percent5);
+//  AffectPercentCercle6(percent6);
 
-}
+// }
 
 function AffectPercentCercle(percent){
   
@@ -482,3 +482,26 @@ function AffectPercentCercle6(percent){
   
   bar.animate(percent);  // Number from 0.0 to 1.0
   }
+
+// Hover Panel Progress
+
+function showCompetance() {
+
+  var percent=0.8;
+  var percent2=0.9;
+  var percent3=0.75;
+  var percent4=0.85;
+  var percent5=0.65;
+  var percent6=0.87;
+  AffectPercentCercle(percent);
+  AffectPercentCercle2(percent2);
+  AffectPercentCercle3(percent3);
+  AffectPercentCercle4(percent4);
+  AffectPercentCercle5(percent5);
+  AffectPercentCercle6(percent6);
+}
+
+function helpFunction(etat) {
+  
+}
+
