@@ -164,7 +164,7 @@
           <div class="col text-center py-5">
             <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">Parcours</h1>
             <h5 style="color: #E1E1E1;">___________</h5>
-            <h5 class="display-4 aniview" data-av-animation="fadeInUp" > EXPÉRIENCES PROFESSIONNELLES</h5>
+            <!-- <h5 class="display-4 aniview" data-av-animation="fadeInUp" > EXPÉRIENCES PROFESSIONNELLES</h5> -->
           </div>
         </div>
       </div>
@@ -173,20 +173,11 @@
       <div class="container">
           <div class="row">
             <div class="col-md-5">
-                
-                <div class="card aniview" data-av-animation="fadeInLeft" style="width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Card Title</h4>
-                        <h6 class="card-subtitle text-muted">Card subtitle</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p>
-                        <a class="btn btn-outline-primary" href="#">Read More</a>
-                    </div>
-                </div>
 
-                <!-- <div class="custom-card text-right p-2 m-2  aniview" data-av-animation="fadeInLeft">
+                <div class="custom-card text-right p-2 m-2  aniview" data-av-animation="fadeInLeft">
                     <h3>1</h3>
                     <h4></h4> 
-                </div> -->
+                </div>
 
                 <div class="custom-card text-right p-2 m-2" style="visibility: hidden;"></div>
 
@@ -201,25 +192,27 @@
                 <h3>3</h3>
                 <h4></h4> 
                 </div>
+                
           </div>
 
-           <div class="col-md-2 text-center">Aujourd'hui</div>
+           <div class="col-md-2 text-center">
+            <span>Aujourd'hui</span><br>
+            <span class="pt-3">Second</span>
+
+            </div>
 
             <div class="col-md-5">
-                <div style="visibility: hidden;" class="custom-card text-right p-2 m-2">
-                    <h3></h3>
-                        <h4</h4> 
-                  </div>
+                
+                <div style="visibility: hiddend;" class="custom-card-time text-left p-2 m-2 "></div>
 
-                  <div class="">
+                 
                     <div class="custom-card text-right p-2 m-2 aniview" data-av-animation="fadeInRight"  style="border: 1px solide black;">
                         <h3>A</h3>
                         <h4></h4> 
                     </div>
-                </div>
+            
                   <div class="custom-card text-right p-2 m-2" style="visibility: hidden;"></div>
 
-                  <div class=""></div>
                     <div class="custom-card text-right p-2 m-2  aniview" data-av-animation="fadeInRight">
                         <h3>B</h3>
                         <h4></h4> 
@@ -238,13 +231,13 @@
           </div>
           <div class="container">
              <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-4">
                     <div style="height: 30px;"><div class="progress-line" id="progress"></div></div>
                     <div style="height: 30px;"><div class="progress-line" id="progress2"></div></div>
                     <div style="height: 30px;"><div class="progress-line" id="progress3"></div></div>
                   </div>
     
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-4">
                     <div style="height: 30px;"><div class="progress-line" id="progress4"></div></div>
                     <div style="height: 30px;"><div class="progress-line" id="progress5"></div></div>
                     <div style="height: 30px;"><div class="progress-line" id="progress6"></div></div>
@@ -252,7 +245,7 @@
              </div>
             
             <button class="btn btn-success" onclick="showWithPercent()">Show With Percent</button>
-            <button class="btn btn-warning" onclick="showCercle()">Show Cercle</button>
+            <button class="btn btn-warning" onclick="showCercles()">Show Cercle</button>
         </div>
 
           <div class="col text-center py-5">

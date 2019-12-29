@@ -58,8 +58,13 @@ body{
 }
 .custom-card{
     border: 3px solid black;
-    width: 450px;
+    width: 100%;
     height: 150px;
+}
+.custom-card-time{
+  /* border: 3px solid black; */
+  width: 100%;
+  height: 150px;
 }
 .scrool-img{
     background-image: url('bg2.jpg');
@@ -128,6 +133,7 @@ body{
     }
   }
   
+
   
   /*
   .sub-card {
@@ -150,7 +156,7 @@ body{
 
 .progress-line{
   margin: 20px;
-  width: 400px;
+  width: 95%;
   height: 10px;
   position: relative;
 }
