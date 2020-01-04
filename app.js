@@ -481,7 +481,8 @@ function AffectPercentCercle6(percent){
   bar.text.style.fontSize = '2.3rem';
   
   bar.animate(percent);  // Number from 0.0 to 1.0
-  }
+
+}
 
 // Hover Panel Progress
 
@@ -501,8 +502,48 @@ function showCompetance() {
   AffectPercentCercle6(percent6);
 }
 
-function helpFunction(etat) {
-  
+
+
+// Scroll
+
+
+
+//Scroll V3
+const threshold = .1
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold 
 }
 
-// Test scroll line
+const handleIntersect = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > threshold) {
+      observer.unobserve(entry.target);
+      showWithPercent();
+    }
+  })
+}
+const observer = new IntersectionObserver(handleIntersect, options)
+observer.observe(document.querySelector('.reveal'))
+
+// Second Cerceles
+const threshold_2 = .1
+const options_2 = {
+  root: null,
+  rootMargin: '0px',
+  threshold_2 
+}
+
+const handleIntersect_2 = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > threshold_2) {
+      observer.unobserve(entry.target);
+      showCompetance();
+     
+    }
+  })
+}
+const observer_2 = new IntersectionObserver(handleIntersect_2, options_2)
+observer_2.observe(document.querySelector('.reveal-2'))
+
