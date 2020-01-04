@@ -4,6 +4,7 @@ body{
 /* Selection color : D9D9D9*/
 
 /* To add for black background 
+
 html{
   background: black;
   filter: invert(1) hue-rotate(180deg);
@@ -281,7 +282,7 @@ pre {
 }
 
 /* Draw line V1*/
-/* .vertical-line {
+ .vertical-line {
   border-left: 2.5px solid #c4bcbc;
   height: 200px;
   position: absolute;
@@ -295,8 +296,8 @@ pre {
   position: absolute;
   left: 30%;
   margin-left: -3px;
-  top: 295px; */
-
+  top: 295px; 
+}
 
 
 
