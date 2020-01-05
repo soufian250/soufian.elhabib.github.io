@@ -85,9 +85,7 @@ html{
 }
 
 /* Test Cards */
-.card{
-  border: 0px;
-}
+
 #card-no-border{
   border: 0px;
 }
@@ -100,13 +98,10 @@ html{
 
 .sub-card {
   margin: 30px auto;
-  width: 360px;
+  width: auto;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.4s;
-}
-.card{
-    border: 0px;
 }
 
 .sub-card .card_title {
@@ -299,5 +294,8 @@ pre {
   top: 295px; 
 }
 
-
-
+/* MAP */
+.map{
+  width: 600px;
+  height: 500px;
+}
