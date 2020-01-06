@@ -1,51 +1,5 @@
-// progressbar.js@1.0.0 version is used
-// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
-// window.onload = function onLoad() {
-//     var circle = new ProgressBar.Circle('#progress', {
-//         color: '#FCB03C',
-//         duration: 3000,
-//         easing: 'easeInOut'
-//     });
 
-//     circle.animate(1);
-// };
 
-function show() {
-
-    // progressbar.js@1.0.0 version is used
-// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
-
-var bar = new ProgressBar.Line(progress, {
-    strokeWidth: 4,
-    easing: 'easeInOut',
-    duration: 2000,
-    color: '#68C3A3',
-    trailColor: '#eee',
-    trailWidth: 44,
-    svgStyle: {width: '100%', height: '100%'},
-    text: {
-      style: {
-        // Text color.
-        // Default: same as stroke color (options.color)
-        color: '#999',
-        position: 'absolute',
-        right: '0',
-        top: '20px',
-        padding: 0,
-        margin: 0,
-        transform: null
-      },
-      autoStyleContainer: false
-    },
-    from: {color: '#FFEA82'},
-    to: {color: '#ED6A5A'},
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + ' %');
-    }
-  });
-  
-  bar.animate(0.94);  // Number from 0.0 to 1.0
-}
 
 function showWithPercent() {
     var percent=0.5;
@@ -501,10 +455,6 @@ function showCompetance() {
   AffectPercentCercle5(percent5);
   AffectPercentCercle6(percent6);
 }
-
-
-
-// Scroll
 
 
 
