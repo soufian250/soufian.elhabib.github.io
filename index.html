@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow.min.css">   
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleforbutton.scss">
+
 
     <!-- End scoll links -->
 
@@ -18,7 +20,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
 
-    <title>Soufian El Habib</title>
+    <title>Soufian </title>
 
     <style>
         .single-line-left{
@@ -96,11 +98,374 @@
                 background-color: greenyellow;
             }
         }
+
+        /* NavBar */
+        .nav {
+            width: 100%;
+            height: 65px;
+            position: fixed;
+            line-height: 65px;
+            text-align: center;
+            z-index: 9999;
+        }
+
+        .nav div.logo {
+            float: left;
+            width: auto;
+            height: auto;
+            padding-left: 0.1rem;
+        }
+
+        .nav div.logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8rem;
+        }
+
+        .nav div.logo a:hover {
+            color: #00E676;
+        }
+
+        .nav div.main_list {
+            height: 65px;
+            float: right;
+        }
+
+        .nav div.main_list ul {
+            width: 100%;
+            height: 65px;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav div.main_list ul li {
+            width: auto;
+            height: 65px;
+            padding: 0;
+            padding-right: 2rem;
+        }
+
+        .nav div.main_list ul li a {
+            text-decoration: none;
+            color: #fff;
+            line-height: 65px;
+            font-size: 1.4rem;
+        }
+
+        .nav div.main_list ul li a:hover {
+            color: #00E676;
+        }
+
+        .navTrigger {
+            display: none;
+        }
+
+         .nav {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            top: 0;
+            position: fixed;
+        } 
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:999px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+    .navTrigger {
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        margin: auto;
+        position: absolute;
+        right: 30px;
+        top: 0;
+        bottom: 0;
+    }
+
+    .navTrigger i {
+        background-color: #fff;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+    }
+
+    .navTrigger i:nth-child(1) {
+        -webkit-animation: outT 0.8s backwards;
+        animation: outT 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+
+    .navTrigger i:nth-child(2) {
+        margin: 5px 0;
+        -webkit-animation: outM 0.8s backwards;
+        animation: outM 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+
+    .navTrigger i:nth-child(3) {
+        -webkit-animation: outBtm 0.8s backwards;
+        animation: outBtm 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+
+    .navTrigger.active i:nth-child(1) {
+        -webkit-animation: inT 0.8s forwards;
+        animation: inT 0.8s forwards;
+    }
+
+    .navTrigger.active i:nth-child(2) {
+        -webkit-animation: inM 0.8s forwards;
+        animation: inM 0.8s forwards;
+    }
+
+    .navTrigger.active i:nth-child(3) {
+        -webkit-animation: inBtm 0.8s forwards;
+        animation: inBtm 0.8s forwards;
+    }
+
+    @-webkit-keyframes inM {
+        50% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(45deg);
+        }
+    }
+
+    @keyframes inM {
+        50% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+
+    @-webkit-keyframes outM {
+        50% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(45deg);
+        }
+    }
+
+    @keyframes outM {
+        50% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+
+    @-webkit-keyframes inT {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(9px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(9px) rotate(135deg);
+        }
+    }
+
+    @keyframes inT {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(9px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(9px) rotate(135deg);
+        }
+    }
+
+    @-webkit-keyframes outT {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(9px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(9px) rotate(135deg);
+        }
+    }
+
+    @keyframes outT {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(9px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(9px) rotate(135deg);
+        }
+    }
+
+    @-webkit-keyframes inBtm {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(-9px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(-9px) rotate(135deg);
+        }
+    }
+
+    @keyframes inBtm {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-9px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-9px) rotate(135deg);
+        }
+    }
+
+    @-webkit-keyframes outBtm {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(-9px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(-9px) rotate(135deg);
+        }
+    }
+
+    @keyframes outBtm {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-9px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-9px) rotate(135deg);
+        }
+    }
+
+    .affix {
+        padding: 0;
+        background-color: #111;
+    }
+
+  
+
+
+        /* End Test NavBar  */
     </style>
 </head>
 <body>
+    <!-- Test Main NavBar -->
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">My Logo</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li class="nav-item">
+                            <a href="#acceuil" class="active">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#profil">PROFIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#parcour">PARCOURS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#competance">COMPETANCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#service">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+
+    <!-- End Test Main NavBar -->
+
     <!-- Main NavBar -->
-        <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top " id="main-nav">
+        <!-- <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top " id="main-nav">
            <div class="container">
            <a href="index.html" class="navbar-brand "><h2>Soufian App</h2></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav"> 
@@ -129,14 +494,16 @@
                 </ul>
             </div>
            </div>
-        </nav>
+        </nav> -->
 
+        <!-- Text inside Pic  -->
         <header id="acceuil" class="img-fluid">
             <div class="dark-overlay">
                 <div class="container">
                     <div class="row align-items-start" id="under">
-                        <div class="col-lg-8 d-none d-lg-block offset-md-3 text-white">
-                          <h1 class="dispaly-4">CV Soufian El habib</h1>
+                        <div class="col-sm-8 d-none d-lg-block offset-md-3 text-white">
+                          <h1 class="dispaly-4 "> Soufian El Habib</h1>
+                           <a href="#contact" class="offset-md-3"><button id="slide">CONTACTEZ MOI</button></a>
                         </div>
                       </div>
                 </div>
@@ -150,7 +517,7 @@
         </div>
 
 <!-- Profil head -->
-  <section id="profil" class="a-propos-section">
+  <section id="profil" class="a-propos-section pt-5 pb-4">
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
@@ -161,7 +528,7 @@
     </div>
     <div class="container">
         <div class="row p-4">
-            <div class="col-8 ">
+            <div class="col-lg-8 ">
                 <div class="aniview" data-av-animation="fadeInUp">
                     <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">OBJECTIF</h1>
                     <p class="paragraph">Ma réussite professionnelle étant mon objectif principal, je souhaite acquérir de l'expérience dans divers domaines tels que le développement d'applications lourdes et webs. Je suis capable de travailler en autonomie dans un environnement dynamique et exigeant. L'informatique a toujours été une passion et je souhaite en faire mon métier. Une forte motivation et des capacités d'analyse, de méthode et de rigueur m'aideront à forger mon avenir afin de devenir un bon développeur.</p>
@@ -187,7 +554,7 @@
                      <li class="pt-4">The Catcher in the Rye</li>
                 </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-lg-4">
               <div class="card shadow-lg p-3 mb-5 bg-white aniview" data-av-animation="slideInRight">
                 <img class="card-img-top" src="me.jpg" alt="Thats me ^_^">
                 <div class="card-body">
@@ -222,9 +589,8 @@
     </div>
   </section>
 
-
   <!-- Section Parcour -->
-  <section id="parcour" class="parcour">
+  <section id="parcour" class="parcour contact-section pt-5 pb-4">
     <div class="container">
         <div class="row">
           <div class="col text-center py-5">
@@ -383,7 +749,7 @@
 
 
   <!-- Services -->
-  <section id="service" class="service">
+  <section id="service" class="service pt-5 pb-4">
     <div class="col text-center py-5">
         <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp" >Services</h1>
         <h5 style="color: #E1E1E1;">___________</h5>
@@ -442,10 +808,11 @@
         <p class="card-text">
           <div class="row text-center pt-4">
             <h1>Je suis disponible pour toute réalisation d'un projet ou pour la collaboration à celui-ci.</h1>
+            
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 offset-md-3">
-                        <a href="#contact" ><button class="text-white btn btn-outline-success btn-lg mt-5 btn-block">CONTACTEZ MOI</button></a>
+                    <div class="col-sm-5 offset-md-3">
+                        <a href="#contact" class="offset-md-3"><button id="slide">CONTACTEZ MOI</button></a>
                     </div>
                 </div>
             </div>
@@ -487,22 +854,19 @@
                 </div>
                 
                 <div class="col-md-6"> <!-- Map-->
-                    <div class="row">
+                    <div class="row my-3">
                         <div class="col-sm-6">
                             <strong>Télephone : </strong> 0655768886
                         </div>
-                        
-                        <div class="col-sm-6">
-                            <strong>Telephone : </strong> 0655768886
-                        </div>
-                    </div> 
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27197.138638995326!2d-7.6850924404538725!3d31.561429124425956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda55093ca9ba31d%3A0xb7aedeee06d07724!2sA%C3%AFt%20Ourir!5e0!3m2!1sfr!2sma!4v1578184006972!5m2!1sfr!2sma" 
-                        width="530" 
-                        height="450" 
-                        frameborder="0" 
-                        style="border:0;" allowfullscreen="">
-                    </iframe>
+
+                    </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27197.138638995326!2d-7.6850924404538725!3d31.561429124425956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda55093ca9ba31d%3A0xb7aedeee06d07724!2sA%C3%AFt%20Ourir!5e0!3m2!1sfr!2sma!4v1578184006972!5m2!1sfr!2sma"
+                            height="450" 
+                            width="100%"
+                            frameborder="0" 
+                            style="border:0;" allowfullscreen="">
+                        </iframe>
                 </div>
             </div>
         </div>
@@ -567,6 +931,10 @@
     <script type="text/javascript" src="jquery-aniview-master/dist/jquery.aniview.js"></script>
    
     <script  src="js/script.js"></script>
+
+    <script src="smoth/dist/smooth-scroll.min.js"></script>
+    <script src="smoth/dist/smooth-scroll.polyfills.min.js"></script>
+
 
 
 </body>
