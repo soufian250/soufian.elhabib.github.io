@@ -11,6 +11,20 @@ $(document).ready(function() {
 	var scroll = new SmoothScroll('a[href*="#"]', {
 		speed: 600
 	});
+
+	var app = document.getElementById('app');
+
+	var typewriter = new Typewriter(app, {
+		loop: true
+	});
+
+	typewriter
+		.typeString('Hello World!')
+		.pauseFor(2500)
+		.deleteAll()
+		.typeString('<strong>Soufian El habib!</strong>')
+		.pauseFor(2500)
+		.start();
 });
 
 $(window).scroll(function() {
