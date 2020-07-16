@@ -1,999 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta
-		http-equiv="X-UA-Compatible" content="ie=edge">
-
-		<!-- Scroll Links -->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link
-		rel="stylesheet" type="text/css" href="styleforbutton.scss">
-
-
-		<!-- End scoll links -->
-
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-		<link rel="stylesheet" href="bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-
-		<title>Soufian
-		</title>
-
-		<style>
-			.single-line-left {
-				float: right;
-			}
-			.float-right {
-				float: right;
-			}
-			.date {
-				position: relative;
-				left: 50%;
-				width: 120px;
-				top: 50px;
-			}
-
-			@media all and(min-width: 996px) and(max-width: 1200px) {
-
-				.vertical-line-push {
-					border-left: 2.5px solid #c4bcbc;
-					height: 220px;
-					position: absolute;
-					left: 30%;
-					margin-left: -3px;
-					top: 320px;
-				}
-			}
-
-			@media all and(max-width: 995px) {
-				.vertical-line {
-					border-left: 2.5px solid #c4bcbc;
-					height: 245px;
-					position: absolute;
-					left: 30%;
-					margin-left: -3px;
-					top: 45px;
-				}
-				.vertical-line-push {
-					border-left: 2.5px solid #c4bcbc;
-					height: 240px;
-					position: absolute;
-					left: 30%;
-					margin-left: -3px;
-					top: 330px;
-				}
-				.resaise-card {
-					width: 80%;
-				}
-				.float-right {
-					float: left !important;
-					position: relative;
-					left: 0;
-					animation-name: card;
-					animation-duration: 4s;
-					width: 80%;
-				}
-				@keyframes card {
-					0% {
-						left: 200px;
-					}
-					25% {
-						left: 0;
-					}
-				}
-
-				.date {
-					position: relative;
-					left: 0;
-					width: 120px;
-					top: 5px;
-					padding-bottom: 15px;
-					animation-name: example;
-					animation-duration: 4s;
-				}
-				@keyframes example {
-					0% {
-						left: 200px;
-					}
-					25% {
-						left: 0;
-					}
-				}
-				.single-line {
-					background-color: greenyellow;
-				}
-			}
-
-			/* NavBar */
-			.nav {
-				width: 100%;
-				height: 65px;
-				position: fixed;
-				line-height: 65px;
-				text-align: center;
-				z-index: 9999;
-			}
-
-			.nav div.logo {
-				float: left;
-				width: auto;
-				height: auto;
-				padding-left: 0.1rem;
-			}
-
-			.nav div.logo a {
-				text-decoration: none;
-				color: #fff;
-				font-size: 1.8rem;
-			}
-
-			.nav div.logo a:hover {
-				color: #00E676;
-			}
-
-			.nav div.main_list {
-				height: 65px;
-				float: right;
-			}
-
-			.nav div.main_list ul {
-				width: 100%;
-				height: 65px;
-				display: flex;
-				list-style: none;
-				margin: 0;
-				padding: 0;
-			}
-
-			.nav div.main_list ul li {
-				width: auto;
-				height: 65px;
-				padding: 0 2rem 0 0;
-			}
-
-			.nav div.main_list ul li a {
-				text-decoration: none;
-				color: #fff;
-				line-height: 65px;
-				font-size: 1.4rem;
-			}
-
-			.nav div.main_list ul li a:hover {
-				color: #00E676;
-			}
-
-			.navTrigger {
-				display: none;
-			}
-
-			.nav {
-				padding-top: 20px;
-				padding-bottom: 20px;
-				-webkit-transition: all 0.4s ease;
-				transition: all 0.4s ease;
-				top: 0;
-				position: fixed;
-			}
-
-
-			/* Media qurey section */
-
-			@media screen and(min-width: 768px) and(max-width: 1024px) {
-				.container {
-					margin: 0;
-				}
-			}
-
-			@media screen and(max-width:999px) {
-				.navTrigger {
-					display: block;
-				}
-				.nav div.logo {
-					margin-left: 15px;
-				}
-				.nav div.main_list {
-					width: 100%;
-					height: 0;
-					overflow: hidden;
-				}
-				.nav div.show_list {
-					height: auto;
-					display: none;
-				}
-				.nav div.main_list ul {
-					flex-direction: column;
-					width: 100%;
-					height: 100vh;
-					right: 0;
-					left: 0;
-					bottom: 0;
-					background-color: #111;
-					/*same background color of navbar*/
-					background-position: center top;
-				}
-				.nav div.main_list ul li {
-					width: 100%;
-					text-align: right;
-				}
-				.nav div.main_list ul li a {
-					text-align: center;
-					width: 100%;
-					font-size: 3rem;
-					padding: 20px;
-				}
-				.nav div.media_button {
-					display: block;
-				}
-			}
-
-			/* Animation */
-			/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
-			.navTrigger {
-				cursor: pointer;
-				width: 30px;
-				height: 25px;
-				margin: auto;
-				position: absolute;
-				right: 30px;
-				top: 0;
-				bottom: 0;
-			}
-
-			.navTrigger i {
-				background-color: #fff;
-				border-radius: 2px;
-				content: '';
-				display: block;
-				width: 100%;
-				height: 4px;
-			}
-
-			.navTrigger i:nth-child(1) {
-				-webkit-animation: outT 0.8s backwards;
-				animation: outT 0.8s backwards;
-				-webkit-animation-direction: reverse;
-				animation-direction: reverse;
-			}
-
-			.navTrigger i:nth-child(2) {
-				margin: 5px 0;
-				-webkit-animation: outM 0.8s backwards;
-				animation: outM 0.8s backwards;
-				-webkit-animation-direction: reverse;
-				animation-direction: reverse;
-			}
-
-			.navTrigger i:nth-child(3) {
-				-webkit-animation: outBtm 0.8s backwards;
-				animation: outBtm 0.8s backwards;
-				-webkit-animation-direction: reverse;
-				animation-direction: reverse;
-			}
-
-			.navTrigger.active i:nth-child(1) {
-				-webkit-animation: inT 0.8s forwards;
-				animation: inT 0.8s forwards;
-			}
-
-			.navTrigger.active i:nth-child(2) {
-				-webkit-animation: inM 0.8s forwards;
-				animation: inM 0.8s forwards;
-			}
-
-			.navTrigger.active i:nth-child(3) {
-				-webkit-animation: inBtm 0.8s forwards;
-				animation: inBtm 0.8s forwards;
-			}
-
-			@-webkit-keyframes inM {
-				50% {
-					-webkit-transform: rotate(0deg);
-				}
-				100% {
-					-webkit-transform: rotate(45deg);
-				}
-			}
-
-			@keyframes inM {
-				50% {
-					transform: rotate(0deg);
-				}
-				100% {
-					transform: rotate(45deg);
-				}
-			}
-
-			@-webkit-keyframes outM {
-				50% {
-					-webkit-transform: rotate(0deg);
-				}
-				100% {
-					-webkit-transform: rotate(45deg);
-				}
-			}
-
-			@keyframes outM {
-				50% {
-					transform: rotate(0deg);
-				}
-				100% {
-					transform: rotate(45deg);
-				}
-			}
-
-			@-webkit-keyframes inT {
-				0% {
-					-webkit-transform: translateY(0px) rotate(0deg);
-				}
-				50% {
-					-webkit-transform: translateY(9px) rotate(0deg);
-				}
-				100% {
-					-webkit-transform: translateY(9px) rotate(135deg);
-				}
-			}
-
-			@keyframes inT {
-				0% {
-					transform: translateY(0px) rotate(0deg);
-				}
-				50% {
-					transform: translateY(9px) rotate(0deg);
-				}
-				100% {
-					transform: translateY(9px) rotate(135deg);
-				}
-			}
-
-			@-webkit-keyframes outT {
-				0% {
-					-webkit-transform: translateY(0px) rotate(0deg);
-				}
-				50% {
-					-webkit-transform: translateY(9px) rotate(0deg);
-				}
-				100% {
-					-webkit-transform: translateY(9px) rotate(135deg);
-				}
-			}
-
-			@keyframes outT {
-				0% {
-					transform: translateY(0px) rotate(0deg);
-				}
-				50% {
-					transform: translateY(9px) rotate(0deg);
-				}
-				100% {
-					transform: translateY(9px) rotate(135deg);
-				}
-			}
-
-			@-webkit-keyframes inBtm {
-				0% {
-					-webkit-transform: translateY(0px) rotate(0deg);
-				}
-				50% {
-					-webkit-transform: translateY(-9px) rotate(0deg);
-				}
-				100% {
-					-webkit-transform: translateY(-9px) rotate(135deg);
-				}
-			}
-
-			@keyframes inBtm {
-				0% {
-					transform: translateY(0px) rotate(0deg);
-				}
-				50% {
-					transform: translateY(-9px) rotate(0deg);
-				}
-				100% {
-					transform: translateY(-9px) rotate(135deg);
-				}
-			}
-
-			@-webkit-keyframes outBtm {
-				0% {
-					-webkit-transform: translateY(0px) rotate(0deg);
-				}
-				50% {
-					-webkit-transform: translateY(-9px) rotate(0deg);
-				}
-				100% {
-					-webkit-transform: translateY(-9px) rotate(135deg);
-				}
-			}
-
-			@keyframes outBtm {
-				0% {
-					transform: translateY(0px) rotate(0deg);
-				}
-				50% {
-					transform: translateY(-9px) rotate(0deg);
-				}
-				100% {
-					transform: translateY(-9px) rotate(135deg);
-				}
-			}
-
-			.affix {
-				padding: 0;
-				background-color: #111;
-			}
-
-
-			/* End Test NavBar  */
-		</style>
-	</head>
-	<body>
-		<!-- Test Main NavBar -->
-		<nav class="nav">
-			<div class="container">
-				<div class="logo">
-					<a href="#">My Logo</a>
-				</div>
-				<div id="mainListDiv" class="main_list">
-					<ul class="navlinks">
-						<li class="nav-item">
-							<a href="#acceuil" class="active">ACCUEIL</a>
-						</li>
-						<li class="nav-item">
-							<a href="#profil">PROFIL</a>
-						</li>
-						<li class="nav-item">
-							<a href="#parcour">PARCOURS</a>
-						</li>
-						<li class="nav-item">
-							<a href="#competance">COMPETANCES</a>
-						</li>
-						<li class="nav-item">
-							<a href="#service">SERVICES</a>
-						</li>
-						<li class="nav-item">
-							<a href="#contact">CONTACT</a>
-						</li>
-					</ul>
-				</div>
-				<span class="navTrigger">
-					<i></i>
-					<i></i>
-					<i></i>
-				</span>
-			</div>
-		</nav>
-
-		<!-- End Test Main NavBar -->
-
-		<!-- Main NavBar -->
-		<!-- <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top " id="main-nav">
-																										           <div class="container">
-																										           <a href="index.html" class="navbar-brand "><h2>Soufian App</h2></a>
-																										            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav"> 
-																										                <span class="navbar-toggler-icon"></span>
-																										            </button>
-																										            <div class="collapse navbar-collapse " id="collapseNav">
-																										                <ul class="navbar-nav ml-auto nav-pills">
-																										                    <li  class="nav-item">
-																										                        <a href="#acceuil" class="nav-link active">ACCUEIL</a>
-																										                    </li>
-																										                    <li class="nav-item">
-																										                        <a href="#profil" class="nav-link">PROFIL</a>
-																										                    </li>
-																										                    <li class="nav-item">
-																										                        <a href="#parcour" class="nav-link">PARCOURS</a>
-																										                    </li>
-																										                    <li class="nav-item">
-																										                        <a href="#competance" class="nav-link">COMPETANCES</a>
-																										                    </li>
-																										                    <li class="nav-item">
-																										                        <a href="#service" class="nav-link">SERVICES</a>
-																										                    </li>
-																										                    <li class="nav-item">
-																										                        <a href="#contact" class="nav-link">CONTACT</a>
-																										                    </li>
-																										                </ul>
-																										            </div>
-																										           </div>
-																										        </nav> -->
-
-		<!-- Text inside Pic  -->
-			<header id="acceuil" class="img-fluid"> <div class="dark-overlay">
-				<div class="container">
-					<div class="row align-items-start" id="under">
-						<div class="col-sm-8 d-none d-lg-block offset-md-3 text-white">
-							<h1 class="dispaly-4" id="app"></h1>
-							<a href="#contact" class="offset-md-3">
-								<button id="slide">CONTACTEZ MOI</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-
-		<div id="links" class="d-flex justify-content-around shadow-sm rounded">
-			<a target="_blank" href="https://github.com/soufian250">
-				<div class="p-4 item-hl aniview" data-av-animation="fadeInLeft"><img class="pr-2" src="https://img.icons8.com/ios-glyphs/60/000000/github.png">
-					Github</div>
-			</a>
-			<a target="_blank" href="https://www.linkedin.com/in/soufain-el-habib-3289b5155/">
-				<div class="p-4 item-hl aniview" data-av-animation="fadeInDown"><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png">
-					Linkdin</div>
-			</a>
-			<a target="_blank" href="#accueil">
-				<div class="p-4 item-hl aniview" data-av-animation="fadeInRight"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png">
-					Facebook</div>
-			</a>
-		</div>
-
-		<!-- Profil head -->
-		<section id="profil" class="a-propos-section pt-5 pb-4">
-			<div class="container">
-				<div class="row">
-					<div class="col text-center py-5">
-						<h1 class="display-4 aniview" id="font-title" data-av-animation="fadeInUp">À propos de moi</h1>
-						<h5 style="color: #E1E1E1;">___________</h5>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row p-4">
-					<div class="col-lg-8 ">
-						<div class="aniview" data-av-animation="fadeInUp">
-							<h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">OBJECTIF</h1>
-							<p class="paragraph">Ma réussite professionnelle étant mon objectif principal, je souhaite acquérir de l'expérience dans différent domaines tels que le développement d'applications mobiles et web.</p>
-						</div>
-						<div class="aniview" data-av-animation="fadeInUp">
-							<h1 class="display-4 font-title">MES ACTIVITÉS</h1>
-							<p class="paragraph">Je travaille sur des projets Symfony en PHP en entreprise. En parallèle je renforce mes connaissances dans divers Frameworks mobiles ou bien en web. De plus, je développe des sites web (d'un simple site vitrine à un site plus complet).</p>
-						</div>
-
-					</div>
-					<div class="col-lg-4">
-						<div class="card shadow-lg p-3 mb-5 bg-white aniview" data-av-animation="slideInRight">
-							<img class="card-img-top" src="me.jpg" alt="Thats me ^_^">
-							<div class="card-body">
-								<ul class="list-group list-group-flush">
-									<li class="list-group-item">
-										<strong>Nom:
-										</strong>
-										El Habib</li>
-									<li class="list-group-item">
-										<strong>Pénom:
-										</strong>
-										Soufian</li>
-									<li class="list-group-item">
-										<strong>Date de naissance:
-										</strong>
-										16/10/1996</li>
-									<li class="list-group-item">
-										<strong>Nationalité:
-										</strong>
-										Marocaine</li>
-									<li class="list-group-item">
-										<strong>Télephone:
-										</strong>
-										(+212)6 20 61 83 66</li>
-									<li class="list-group-item">
-										<strong>Email:
-										</strong>
-										elhabib.soufian@gmail.com</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Info section -->
-		<section id="info-secion" class="scrool-img">
-			<div class="card text-white">
-				<div class="card-img-overlay">
-					<p class="card-text">
-						<div class="row text-center pt-4">
-							<div class="col-sm">ANe</div>
-							<div class="col-sm">ANe</div>
-							<div class="col-sm">ANe</div>
-							<div class="col-sm">ANe</div>
-						</div>
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<!-- Section Parcour -->
-		<section id="parcour" class="parcour contact-section pt-5 pb-4">
-			<div class="container">
-				<div class="row">
-					<div class="col text-center py-5">
-						<h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">Parcours</h1>
-						<h5 style="color: #E1E1E1;">___________</h5>
-						<h5 class="aniview" data-av-animation="fadeInUp">
-							EXPÉRIENCES PROFESSIONNELLES</h5>
-					</div>
-				</div>
-			</div>
-
-			<section class="timeline">
-				<div class="container">
-					<div class="timeline-item">
-
-						<div class="timeline-img"></div>
-
-						<div class="timeline-content aniview" data-av-animation="fadeInLeft">
-
-
-							<div class="date-timeline">5 AUG 2016</div>
-							<h2>Quote</h2>
-							<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-
-						<div class="timeline-img"></div>
-
-						<div class="timeline-content aniview" data-av-animation="fadeInRight">
-
-							<h2>Title</h2>
-							<div class="date-timeline">22 JUN 2016</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							<a class="bnt-more" href="javascript:void(0)">More</a>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-img"></div>
-						<div class="timeline-content aniview" data-av-animation="fadeInLeft">
-
-							<div class="date-timeline">3 JUN 2016</div>
-							<h2>Quote</h2>
-							<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-img"></div>
-						<div class="timeline-content aniview" data-av-animation="fadeInRight">
-
-							<h2>Title</h2>
-							<div class="date-timeline">22 JUN 2016</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							<a class="bnt-more" href="javascript:void(0)">More</a>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-img"></div>
-						<div class="timeline-content aniview" data-av-animation="fadeInLeft">
-
-							<div class="date-timeline">3 JUN 2016</div>
-							<h2>Quote</h2>
-							<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-						</div>
-					</div>
-
-
-					<div class="timeline-item">
-						<div class="timeline-img"></div>
-						<div class="timeline-content aniview" data-av-animation="fadeInRight">
-
-							<h2>Title</h2>
-							<div class="date-timeline">22 JUN 2016</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							<a class="bnt-more" href="javascript:void(0)">More</a>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-
-						<div class="timeline-img"></div>
-
-						<div class="timeline-content aniview" data-av-animation="fadeInLeft">
-
-							<div class="date-timeline">5 AUG 2016</div>
-							<h2>Quote</h2>
-							<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-img"></div>
-						<div class="timeline-content aniview" data-av-animation="fadeInRight">
-
-							<h2>Title</h2>
-							<div class="date-timeline">22 JUN 2016</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							<a class="bnt-more" href="javascript:void(0)">More</a>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-
-						<div class="timeline-img"></div>
-
-						<div class="timeline-content aniview" data-av-animation="fadeInLeft">
-
-							<div class="date-timeline">1 SEP 2016</div>
-							<h2>Title</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-							<a class="bnt-more" href="javascript:void(0)">More</a>
-						</div>
-					</div>
-
-
-				</div>
-			</section>
-
-
-		</section>
-
-		<!-- Compétences -->
-		<section id="competance" class="competances pt-5">
-			<div class="bg-dark text-white">
-				<div class="col text-center py-5">
-					<h1 class="display-4 font-title aniview reveal" data-av-animation="fadeInUp">Compétances</h1>
-					<h5 style="color: #E1E1E1;">___________</h5>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-sm-4">
-							<div style="height: 30px;">
-								<div class="progress-line" id="progress"></div>
-							</div>
-							<div style="height: 30px;">
-								<div class="progress-line" id="progress2"></div>
-							</div>
-							<div style="height: 30px;">
-								<div class="progress-line" id="progress3"></div>
-							</div>
-						</div>
-
-						<div class="col-md-6 col-sm-4">
-							<div style="height: 30px;">
-								<div class="progress-line" id="progress4"></div>
-							</div>
-							<div style="height: 30px;">
-								<div class="progress-line" id="progress5"></div>
-							</div>
-							<div style="height: 30px;">
-								<div class="progress-line" id="progress6"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col text-center py-5">
-					<h3 class="display-4 font-sub-title aniview reveal-2" data-av-animation="fadeInUp">Plus de Compétances</h3>
-					<h5 style="color: #E1E1E1;">___________</h5>
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<div id="progressCercle"></div><br><br><span class="m-3">C#</span>
-							</div>
-							<div class="col">
-								<div id="progressCercle2"></div><br><br><span class="m-3">C#</span>
-							</div>
-							<div class="col">
-								<div id="progressCercle3"></div><br><br><span class="m-3">C#</span>
-							</div>
-							<div class="col">
-								<div id="progressCercle4"></div><br><br><span class="m-3">C#</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="space" style="width: 100%; height: 110px; border : 3px solid white;"></div>
-
-
-		<!-- Services -->
-		<section id="service" class="service pt-5 pb-4">
-			<div class="col text-center py-5">
-				<h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">Services</h1>
-				<h5 style="color: #E1E1E1;">___________</h5>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="card-columns">
-
-						<div class="card" id="card-no-border">
-							<div class="card-body sub-card">
-								<h4 class="card-title">
-									<i class="fa fa-code"></i>
-									Ecrire du code</h4>
-								<p class="card-text">En tant que développeur, j'en tape du code.. Je passe des heures, des journées, des nuits entières à taper du code pour que cela fonctionne !</p>
-							</div>
-						</div>
-						<div class="card cards-list-test mb-5" id="card-no-border">
-							<div class="card-body sub-card" id="no-border">
-								<h4 class="card-title">
-									<i class="fa fa-sitemap"></i>
-									Site Web</h4>
-								<p class="card-text">Je crée des sites web, que ce soit pour des projets personnels ou bien pour des clients tout en restant à l'écoute des nouvelles technologies.</p>
-							</div>
-						</div>
-						<div class="card cards-list-test" id="card-no-border">
-							<div class="card-body sub-card">
-								<h4 class="card-title">
-									<i class="fa fa-question"></i>
-									Assistance</h4>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-																																																																																																																					                        is a little bit longer.</p>
-							</div>
-						</div>
-						<div class="card cards-list-test" id="card-no-border">
-							<div class="card-body sub-card">
-								<h4 class="card-title">
-									<i class="fa fa-bug"></i>
-									Nettoyage</h4>
-								<p class="card-text">"Le pc rame" ; "Trop de pubs" ; "J'ai un virus qui m'empêche d'utiliser mon ordinateur comme je veux" : Vous pouvez compter sur moi, je suis là pour ça !</p>
-							</div>
-						</div>
-						<div class="card cards-list-test" id="card-no-border">
-							<div class="card-body sub-card">
-								<h4 class="card-title">
-									<i class="fa fa-mobile"></i>
-									Mobile</h4>
-								<p class="card-text">J'aime bien développer des applications diverses que ce soit pour des jeux ou des outils que l'on utilise tous les jours.</p>
-							</div>
-						</div>
-						<div class="card cards-list-test" id="card-no-border">
-							<div class="card-body sub-card">
-								<h4 class="card-title">
-									<i class="fa fa-random"></i>
-									Autre</h4>
-								<p class="card-text">Effectivement, l'informatique, c'est vaste et j'interviens dans plein de domaines comme, par exemple, la configuration des permissions et canaux d'un teamspeak, l'installation d'un serveur, des projets divers en communauté ou seul (notamment par l'intermédiaire de Trello), des montages audio et vidéo, la création et/ou la mise à jour d'un forum etc.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<div class="space" style="width: 100%; height: 150px; border : 3px solid white;"></div>
-
-			<!-- contact section 1 -->
-			<section id="first-contact" class="scrool-img">
-				<div class="card text-white" id="main-nav">
-					<div class="card-img-overlay">
-						<p class="card-text">
-							<div class="row text-center pt-4">
-								<h1>Je suis disponible pour toute réalisation d'un projet ou pour la collaboration à celui-ci.</h1>
-
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-5 offset-md-3">
-											<a href="#contact" class="offset-md-3">
-												<button id="slide">CONTACTEZ MOI</button>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- Contact Section -->
-			<section id="contact" class="contact-section pt-5 pb-4">
-				<div class="col text-center py-5">
-					<h1 class="display-4 font-title">Contact</h1>
-					<h5 style="color: #E1E1E1;">___________</h5>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div
-							class="col-md-6">
-							<!-- Contact-->
-							<h5>ENVOYEZ-MOI UN MESSAGE</h5>
-							<form class=" pt-4" method="get" action="">
-								<div class="form-group">
-									<label for="name">Name</label>
-									<input type="text" style="background-color: #F7F7F7;" name="name" id="" class="form-control">
-								</div>
-								<div class="form-group">
-									<label for="name">Email</label>
-									<input type="email" name="email" id="" class="bg-light form-control" placeholder="exemple@gmail.com">
-								</div>
-								<div class="form-group">
-									<label for="name">Sujet</label>
-									<input type="text" name="Sujet" style="background-color: #F7F7F7;" id="" class="form-control">
-								</div>
-								<div class="form-group">
-									<label for="name">Message</label>
-									<textarea name="message" id="" style="background-color: #F7F7F7;" class="form-control"></textarea>
-								</div>
-								<button onclick="show()" class="btn btn-success btn-lg">ENVOYER</button>
-							</form>
-						</div>
-
-						<div
-							class="col-md-6">
-							<!-- Map-->
-							<div class="row my-3">
-								<div class="col-sm-6">
-									<strong>Télephone :
-									</strong>
-									0655768886
-								</div>
-
-							</div>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27197.138638995326!2d-7.6850924404538725!3d31.561429124425956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda55093ca9ba31d%3A0xb7aedeee06d07724!2sA%C3%AFt%20Ourir!5e0!3m2!1sfr!2sma!4v1578184006972!5m2!1sfr!2sma" height="450" width="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<div class="space" style="width: 100%; height: 110px; border : 3px solid white;"></div>
-
-			<footer class="text-center text-white pt-3 mt-4" style="background-color: #1a1e23;">
-				<div class="container">
-					<div class="row align-items-center" style="width: 100%; height: 100px;">
-						<div class="col">
-							<strong>Soufian El Habib</strong>
-							<p>Copyright &copy;
-								<span id="year"></span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</footer>
-
-
-			<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-
-			<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-
-			<script>
-				$('#year').text(new Date().getFullYear());
-$('body').scrollspy({target: '#main-nav'});
-
-// Add smooth scrolling
-$('#main-nav a').on('click', function (e) { // Check for a hash value
-if (this.hash !== '') { // Prevent default behavior
-e.preventDefault();
-
-// Store hash
-const hash = this.hash;
-
-// Animate smooth scroll
-$('html, body').animate({
-scrollTop: $(hash).offset().top
-}, 900, function () { // Add hash to URL after scroll
-window.location.hash = hash;
-});
-}
-});
-			</script>
-
-			<script src="app.js"></script>
-			<script src="progressbar.js"></script>
-
-			<!-- Scroll Links  -->
-
-			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
-			<script type="text/javascript" src="jquery-aniview-master/dist/jquery.aniview.js"></script>
-
-			<script src="js/script.js"></script>
-
-			<script src="smoth/dist/smooth-scroll.min.js"></script>
-			<script src="smoth/dist/smooth-scroll.polyfills.min.js"></script>
-		</body>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Scroll Links -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow.min.css">   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleforbutton.scss">
+
+
+    <!-- End scoll links -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
+    <title>Soufian El Habib </title>
+
+</head>
+<body>
+    <!-- Test Main NavBar -->
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">My Logo</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li class="nav-item">
+                            <a href="#acceuil" class="active">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#profil">PROFIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#parcour">PARCOURS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#competance">COMPETANCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#service">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+
+    <!-- End Test Main NavBar -->
+
+        <!-- Text inside Pic  -->
+        <header id="acceuil" class="img-fluid">
+            <div class="dark-overlay">
+                <div class="container">
+                    <div class="row align-items-start" id="under">
+                        <div class="col-sm-8 d-none d-lg-block offset-md-3 text-white">
+                          <h1 class="dispaly-4" id="app"></h1>
+                          <a href="#contact" class="offset-md-3"><button id="slide">CONTACTEZ MOI</button></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="links" class="d-flex justify-content-around shadow-sm rounded">
+            <a target="_blank"  href="https://github.com/soufian250"> <div class="p-4 item-hl aniview" data-av-animation="fadeInLeft"><img class="pr-2" src="https://img.icons8.com/ios-glyphs/60/000000/github.png"> Github</div></a>
+            <a target="_blank" href="https://www.linkedin.com/in/soufain-el-habib-3289b5155/"><div class="p-4 item-hl aniview" data-av-animation="fadeInDown"><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png"> Linkdin</div></a>
+            <a target="_blank" href="#accueil"><div class="p-4 item-hl aniview" data-av-animation="fadeInRight"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png"> Facebook</div></a>
+        </div>
+
+<!-- Profil head -->
+  <section id="profil" class="a-propos-section pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+            <h1 class="display-4 aniview" id="font-title" data-av-animation="fadeInUp">À propos de moi</h1>
+            <h5 style="color: #E1E1E1;">___________</h5>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-lg-8 ">
+                <div class="aniview" data-av-animation="fadeInUp">
+                    <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">OBJECTIF</h1>
+                    <p class="paragraph">Ma réussite professionnelle étant mon objectif principal, je souhaite acquérir de l'expérience dans différent domaines tels que le développement d'applications mobiles et web.</p>
+                </div>
+                <div class="aniview" data-av-animation="fadeInUp">
+                    <h1 class="display-4 font-title" >MES ACTIVITÉS</h1>
+                    <p class="paragraph">Je travaille sur des projets Symfony en PHP en entreprise. En parallèle je renforce mes connaissances dans divers Frameworks mobiles ou bien en web. De plus, je développe des sites web (d'un simple site vitrine à un site plus complet).</p>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+              <div class="card shadow-lg p-3 mb-5 bg-white aniview" data-av-animation="slideInRight">
+                <img class="card-img-top" src="me.jpg" alt="Thats me ^_^">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Nom: </strong> El Habib</li>
+                        <li class="list-group-item"><strong>Pénom: </strong> Soufian</li>
+                        <li class="list-group-item"><strong>Date de naissance: </strong> 16/10/1996</li>
+                        <li class="list-group-item"><strong>Nationalité: </strong> Marocaine</li>
+                        <li class="list-group-item"><strong>Télephone: </strong> (+212)6 20 61 83 66</li>
+                        <li class="list-group-item"><strong>Email: </strong> elhabib.soufian@gmail.com</li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Info section -->
+  <section id="info-secion" class="scrool-img">
+      <div class="card text-white">
+            <div class="card-img-overlay">
+            <p class="card-text">
+                <div class="row text-center pt-4">
+                    <div class="col-sm">ANe</div>
+                    <div class="col-sm">ANe</div>
+                    <div class="col-sm">ANe</div>
+                    <div class="col-sm">ANe</div>
+                </div>
+            </p>
+    </div>
+    </div>
+  </section>
+
+  <!-- Section Parcour -->
+  <section id="parcour" class="parcour contact-section pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">Parcours</h1>
+            <h5 style="color: #E1E1E1;">___________</h5>
+            <h5 class="aniview" data-av-animation="fadeInUp"> EXPÉRIENCES PROFESSIONNELLES</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+          <div class="row timeline">
+              
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content aniview" data-av-animation="fadeInLeft">
+                    <h2>Title</h2>
+                    <div class="date-timeline">22 JUN 2016</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content aniview" data-av-animation="fadeInRight">
+                    <h2>Title</h2>
+                    <div class="date-timeline">22 JUN 2016</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content aniview" data-av-animation="fadeInLeft">
+                    <h2>Title</h2>
+                    <div class="date-timeline">22 JUN 2016</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content aniview" data-av-animation="fadeInRight">
+                    <h2>Title</h2>
+                    <div class="date-timeline">22 JUN 2016</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content aniview" data-av-animation="fadeInLeft">
+                    <h2>Title</h2>
+                    <div class="date-timeline">22 JUN 2016</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content aniview" data-av-animation="fadeInRight">
+                    <h2>Title</h2>
+                    <div class="date-timeline">22 JUN 2016</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                    <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+
+          </div>
+      </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="competance" class="competances pt-5">
+      <div class="bg-dark text-white">
+        <div class="col text-center py-5">
+            <h1 class="display-4 font-title aniview reveal" data-av-animation="fadeInUp" >Compétances</h1>
+            <h5 style="color: #E1E1E1;">___________</h5>
+          </div>
+          <div class="container">
+             <div class="row">
+                <div class="col-md-6 col-sm-4">
+                    <div style="height: 30px;"><div class="progress-line" id="progress"></div></div>
+                    <div style="height: 30px;"><div class="progress-line" id="progress2"></div></div>
+                    <div style="height: 30px;"><div class="progress-line" id="progress3"></div></div>
+                  </div> 
+    
+                  <div class="col-md-6 col-sm-4">
+                    <div style="height: 30px;"><div class="progress-line" id="progress4"></div></div>
+                    <div style="height: 30px;"><div class="progress-line" id="progress5"></div></div>
+                    <div style="height: 30px;"><div class="progress-line" id="progress6"></div></div>
+                  </div>
+             </div>
+         </div>
+
+          <div class="col text-center py-5">
+            <h3 class="display-4 font-sub-title aniview reveal-2" data-av-animation="fadeInUp"  >Plus de Compétances</h3>
+            <h5 style="color: #E1E1E1;">___________</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><div id="progressCercle"></div><br><br><span class="m-3">C#</span></div> 
+                    <div class="col"><div id="progressCercle2"></div><br><br><span class="m-3">C#</span></div>
+                    <div class="col"> <div id="progressCercle3"></div><br><br><span class="m-3">C#</span></div>
+                    <div class="col"> <div id="progressCercle4"></div><br><br><span class="m-3">C#</span></div>
+                </div>
+            </div>
+        </div>
+     </div>
+  </section>
+  <div class="space" style="width: 100%; height: 110px; border : 3px solid white;"></div>
+
+
+  <!-- Services -->
+  <section id="service" class="service pt-5 pb-4">
+    <div class="col text-center py-5">
+        <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp" >Services</h1>
+        <h5 style="color: #E1E1E1;">___________</h5>
+      </div>
+      <div class="container">
+       <div class="row">
+        <div class="card-columns">
+
+            <div class="card" id="card-no-border">
+                <div class="card-body sub-card">
+                    <h4 class="card-title"> <i class="fa fa-code"></i> Ecrire du code</h4>
+                    <p class="card-text">En tant que développeur, j'en tape du code.. Je passe des heures, des journées, des nuits entières à taper du code pour que cela fonctionne !</p>
+                </div>
+            </div>
+            <div class="card cards-list-test mb-5" id="card-no-border">
+                <div class="card-body sub-card" id="no-border">
+                    <h4 class="card-title"><i class="fa fa-sitemap"></i> Site Web</h4>
+                    <p class="card-text">Je crée des sites web, que ce soit pour des projets personnels ou bien pour des clients tout en restant à l'écoute des nouvelles technologies.</p>
+                </div>
+            </div>
+            <div class="card cards-list-test" id="card-no-border">
+                <div class="card-body sub-card">
+                    <h4 class="card-title"><i class="fa fa-question"></i> Assistance</h4>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                        is a little bit longer.</p>
+                </div>
+            </div>
+            <div class="card cards-list-test" id="card-no-border">
+                <div class="card-body sub-card">
+                    <h4 class="card-title"><i class="fa fa-bug"></i> Nettoyage</h4>
+                    <p class="card-text">"Le pc rame" ; "Trop de pubs" ; "J'ai un virus qui m'empêche d'utiliser mon ordinateur comme je veux" : Vous pouvez compter sur moi, je suis là pour ça !</p>
+                </div>
+            </div>
+            <div class="card cards-list-test" id="card-no-border">
+                <div class="card-body sub-card">
+                    <h4 class="card-title"><i class="fa fa-mobile"></i> Mobile</h4>
+                    <p class="card-text">J'aime bien développer des applications diverses que ce soit pour des jeux ou des outils que l'on utilise tous les jours.</p>
+                </div>
+            </div>
+            <div class="card cards-list-test" id="card-no-border">
+                <div class="card-body sub-card">
+                    <h4 class="card-title"><i class="fa fa-random"></i> Autre</h4>
+                    <p class="card-text">Effectivement, l'informatique, c'est vaste et j'interviens dans plein de domaines comme, par exemple, la configuration des permissions et canaux d'un teamspeak, l'installation d'un serveur, des projets divers en communauté ou seul (notamment par l'intermédiaire de Trello), des montages audio et vidéo, la création et/ou la mise à jour d'un forum etc.</p>
+                </div>
+             </div>
+        </div>
+      </div>
+  </section>
+  <div class="space" style="width: 100%; height: 150px; border : 3px solid white;"></div>
+
+  <!-- contact section 1 -->
+  <section id="first-contact" class="scrool-img">
+    <div class="card text-white" id="main-nav">
+     <div class="card-img-overlay">
+        <p class="card-text">
+          <div class="row text-center pt-4">
+            <h1>Je suis disponible pour toute réalisation d'un projet ou pour la collaboration à celui-ci.</h1>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 offset-md-3">
+                        <a href="#contact" class="offset-md-3"><button id="slide">CONTACTEZ MOI</button></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </p>
+     </div>
+   </div>
+</section>
+
+<!-- Contact Section -->
+    <section id="contact" class="contact-section pt-5 pb-4">
+        <div class="col text-center py-5">
+        <h1 class="display-4 font-title aniview" data-av-animation="fadeInUp">Contact</h1>
+
+            <h5 style="color: #E1E1E1;">___________</h5>
+          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"> <!-- Contact-->
+                    <h5>ENVOYEZ-MOI UN MESSAGE</h5>
+                    <form class=" pt-4" method="get" action="">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" style="background-color: #F7F7F7;" name="name" id="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Email</label>
+                            <input  type="email" name="email" id="" class="bg-light form-control" placeholder="exemple@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Sujet</label>
+                            <input type="text" name="Sujet" style="background-color: #F7F7F7;" id="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea  name="message" id="" style="background-color: #F7F7F7;" class="form-control"></textarea>
+                        </div>
+                        <button onclick="show()" class="btn btn-success btn-lg">ENVOYER</button>
+                    </form>
+                </div>
+                
+                <div class="col-md-6"> <!-- Map-->
+                    <div class="row my-3">
+                        <div class="col-sm-6">
+                            <strong>Télephone : </strong> 0655768886
+                        </div>
+
+                    </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27197.138638995326!2d-7.6850924404538725!3d31.561429124425956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda55093ca9ba31d%3A0xb7aedeee06d07724!2sA%C3%AFt%20Ourir!5e0!3m2!1sfr!2sma!4v1578184006972!5m2!1sfr!2sma"
+                            height="450" 
+                            width="100%"
+                            frameborder="0" 
+                            style="border:0;" allowfullscreen="">
+                        </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="space" style="width: 100%; height: 110px; border : 3px solid white;"></div>
+
+    <!-- Fotter -->
+    <footer class="text-center text-white pt-3 mt-4" style="background-color: #1a1e23;">
+       <div class="container">
+           <div class="row align-items-center" style="width: 100%; height: 100px;">
+               <div class="col">
+                   <strong>Soufian El Habib</strong>
+                   <p>Copyright &copy; <span id="year"></span></p>
+               </div>
+           </div>
+       </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+    
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
+    <script src="app.js"></script>
+    <script src="progressbar.js"></script>
+
+    <!-- Scroll Links  -->
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <script type="text/javascript" src="jquery-aniview-master/dist/jquery.aniview.js"></script>
+   
+    <script  src="js/script.js"></script>
+
+    <script src="smoth/dist/smooth-scroll.min.js"></script>
+    <script src="smoth/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+
+</body>
 </html>
