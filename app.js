@@ -18,7 +18,7 @@ function AffectProgress(percent) {
 		strokeWidth: 4,
 		easing: 'easeInOut',
 		duration: 2000,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#eee',
 		trailWidth: 44,
 		svgStyle: { width: '100%', height: '100%' },
@@ -50,7 +50,7 @@ function AffectProgress2(percent) {
 		strokeWidth: 4,
 		easing: 'easeInOut',
 		duration: 2000,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#eee',
 		trailWidth: 44,
 		svgStyle: { width: '100%', height: '100%' },
@@ -82,7 +82,7 @@ function AffectProgress3(percent) {
 		strokeWidth: 4,
 		easing: 'easeInOut',
 		duration: 2000,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#eee',
 		trailWidth: 44,
 		svgStyle: { width: '100%', height: '100%' },
@@ -114,7 +114,7 @@ function AffectProgress4(percent) {
 		strokeWidth: 4,
 		easing: 'easeInOut',
 		duration: 2000,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#eee',
 		trailWidth: 44,
 		svgStyle: { width: '100%', height: '100%' },
@@ -146,7 +146,7 @@ function AffectProgress5(percent) {
 		strokeWidth: 4,
 		easing: 'easeInOut',
 		duration: 2000,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#eee',
 		trailWidth: 44,
 		svgStyle: { width: '100%', height: '100%' },
@@ -178,7 +178,7 @@ function AffectProgress6(percent) {
 		strokeWidth: 4,
 		easing: 'easeInOut',
 		duration: 2000,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#eee',
 		trailWidth: 44,
 		svgStyle: { width: '100%', height: '100%' },
@@ -225,7 +225,7 @@ function showCercles() {
 function AffectPercentCercle(percent) {
 	var bar = new ProgressBar.Circle(progressCercle, {
 		strokeWidth: 6,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#484B4F',
 		trailWidth: 7,
 		easing: 'easeInOut',
@@ -236,7 +236,7 @@ function AffectPercentCercle(percent) {
 			alignToBottom: false
 		},
 		from: { color: '#52c43b' },
-		to: { color: '#68C3A3' },
+		to: { color: '#00A9A5' },
 		// Set default step function for all animate calls
 		step: (state, bar) => {
 			bar.path.setAttribute('stroke', state.color);
@@ -259,7 +259,7 @@ function AffectPercentCercle(percent) {
 function AffectPercentCercle2(percent) {
 	var bar = new ProgressBar.Circle(progressCercle2, {
 		strokeWidth: 6,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#484B4F',
 		trailWidth: 7,
 		easing: 'easeInOut',
@@ -270,7 +270,7 @@ function AffectPercentCercle2(percent) {
 			alignToBottom: false
 		},
 		from: { color: '#43bf8b' },
-		to: { color: '#68C3A3' },
+		to: { color: '#00A9A5' },
 		// Set default step function for all animate calls
 		step: (state, bar) => {
 			bar.path.setAttribute('stroke', state.color);
@@ -293,7 +293,7 @@ function AffectPercentCercle2(percent) {
 function AffectPercentCercle3(percent) {
 	var bar = new ProgressBar.Circle(progressCercle3, {
 		strokeWidth: 6,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#484B4F',
 		trailWidth: 7,
 		easing: 'easeInOut',
@@ -304,7 +304,7 @@ function AffectPercentCercle3(percent) {
 			alignToBottom: false
 		},
 		from: { color: '#52c43b' },
-		to: { color: '#68C3A3' },
+		to: { color: '#00A9A5' },
 		// Set default step function for all animate calls
 		step: (state, bar) => {
 			bar.path.setAttribute('stroke', state.color);
@@ -327,7 +327,7 @@ function AffectPercentCercle3(percent) {
 function AffectPercentCercle4(percent) {
 	var bar = new ProgressBar.Circle(progressCercle4, {
 		strokeWidth: 6,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#484B4F',
 		trailWidth: 7,
 		easing: 'easeInOut',
@@ -338,7 +338,7 @@ function AffectPercentCercle4(percent) {
 			alignToBottom: false
 		},
 		from: { color: '#43bf8b' },
-		to: { color: '#68C3A3' },
+		to: { color: '#00A9A5' },
 		// Set default step function for all animate calls
 		step: (state, bar) => {
 			bar.path.setAttribute('stroke', state.color);
@@ -361,7 +361,7 @@ function AffectPercentCercle4(percent) {
 function AffectPercentCercle5(percent) {
 	var bar = new ProgressBar.Circle(progressCercle5, {
 		strokeWidth: 6,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#484B4F',
 		trailWidth: 7,
 		easing: 'easeInOut',
@@ -372,7 +372,7 @@ function AffectPercentCercle5(percent) {
 			alignToBottom: false
 		},
 		from: { color: '#52c43b' },
-		to: { color: '#68C3A3' },
+		to: { color: '#00A9A5' },
 		// Set default step function for all animate calls
 		step: (state, bar) => {
 			bar.path.setAttribute('stroke', state.color);
@@ -395,7 +395,7 @@ function AffectPercentCercle5(percent) {
 function AffectPercentCercle6(percent) {
 	var bar = new ProgressBar.Circle(progressCercle6, {
 		strokeWidth: 6,
-		color: '#68C3A3',
+		color: '#00A9A5',
 		trailColor: '#484B4F',
 		trailWidth: 7,
 		easing: 'easeInOut',
@@ -406,7 +406,7 @@ function AffectPercentCercle6(percent) {
 			alignToBottom: false
 		},
 		from: { color: '#43bf8b' },
-		to: { color: '#68C3A3' },
+		to: { color: '#00A9A5' },
 		// Set default step function for all animate calls
 		step: (state, bar) => {
 			bar.path.setAttribute('stroke', state.color);

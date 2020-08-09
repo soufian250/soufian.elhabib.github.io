@@ -19,10 +19,10 @@ $(document).ready(function() {
 	});
 
 	typewriter
-		.typeString('Hello World!')
+		.typeString('DÉVELOPPEUR WEB')
 		.pauseFor(2500)
 		.deleteAll()
-		.typeString('<strong>Soufian El habib!</strong>')
+		.typeString('<strong>Soufian El Habib!</strong>')
 		.pauseFor(2500)
 		.start();
 });
