@@ -786,7 +786,57 @@ blockquote {
 
 
 /* Download button */
+.btn-share{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
 
+button .icone-section {
+    width: 16rem;
+    height: auto;
+  }
+
+
+.btn-share .icone-section{
+    transition: all 0.40s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    /* width: 2rem;
+    height: 2rem; */
+    background: #2ecc71;
+    border-radius: 1.625rem;
+    
+}
+.button-text-contact{
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+  button:hover .button-text-contact {
+    color: #fff;
+  }
+  
 .button-download {
   position: relative;
   display: inline-block;
@@ -832,8 +882,8 @@ button.learn-more .circle .icon.arrow {
   width: 1.125rem;
   height: 0.125rem;
   background: none;
- 
 }
+
  button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
@@ -862,6 +912,7 @@ button.learn-more .button-text {
   text-align: center;
   text-transform: uppercase;
 }
+
 button:hover .circle {
   width: 100%;
 }
@@ -902,5 +953,60 @@ button:hover .button-text {
     position: absolute;
     filter: brightness(30%);
   }
+
+  /* Contact button in Profil Section */
+
+ .btn-share {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    --btn-color: #2ecc71;
+    line-height: 1;
+    overflow: hidden;
+}
+
+ .btn-share .btn-text, .btn-share .btn-icon {
+	 display: inline-flex;
+	 vertical-align: middle;
+	 transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-share .social-icons {
+	 position: absolute;
+	 top: 50%;
+	 left: 0;
+	 right: 0;
+	 display: flex;
+	 margin: 0;
+	 padding: 0;
+	 list-style-type: none;
+	 transform: translateY(-50%);
+}
+ .btn-share .social-icons li {
+	 flex: 1;
+}
+ .btn-share .social-icons li a {
+	 display: inline-flex;
+	 vertical-align: middle;
+	 transform: translateY(55px);
+	 transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+ 
+.btn-share:hover .btn-text, .btn-share:hover .btn-icon {
+	 transform: translateY(-55px);
+}
+
+.btn-share:hover .social-icons li a {
+	 transform: translateY(0);
+}
 
   
