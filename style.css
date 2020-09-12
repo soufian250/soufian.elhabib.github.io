@@ -798,23 +798,54 @@ blockquote {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
-}
-
-button .icone-section {
     width: 16rem;
     height: auto;
-  }
+    
+}
 
+.btn-share .secondCircle{
+    transition: all 0.40s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+.btn-share .text-button{
+
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+button.btn-share {
+    width: 16rem;
+    height: auto;
+}
 
 .btn-share .icone-section{
     transition: all 0.40s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
     margin: 0;
-    /* width: 2rem;
-    height: 2rem; */
-    background: #2ecc71;
     border-radius: 1.625rem;
+    width: 40px;
+    top: 8px;
+    left: 4px;
     
 }
 .button-text-contact{
@@ -913,9 +944,22 @@ button.learn-more .button-text {
   text-transform: uppercase;
 }
 
+/* ************** */
+
+/* This Section(inside comment) is for contact Button at the < À propos de moi > Section  */
+button:hover .secondCircle {
+    width: 100%;
+}
+
+button:hover .text-button{
+    color: #fff;
+}
+/* ************** */
+
 button:hover .circle {
   width: 100%;
 }
+
 button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
@@ -924,6 +968,7 @@ button:hover .circle .icon.arrow {
 button:hover .button-text {
   color: #fff;
 }
+
 
 /* Competense section background */
 

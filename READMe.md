@@ -17,3 +17,6 @@ https://jsfiddle.net/mv612vrf/1702/
 
 ## Button Style with animation
    https://freefrontend.com/css-buttons/
+
+## Icones
+   https://icones8.fr/icons/set/projet
