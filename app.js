@@ -510,4 +510,7 @@ $('.navTrigger').click(function() {
           window.location.hash = hash;
         });
       }
-    });
+	});
+	
+// Contact Form
+
