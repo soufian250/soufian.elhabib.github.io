@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
     $mail->Body = "<h3>Name : $name <br>Email : $email <br>Message : $message</h3>";
 
     $mail->send();
-    header("location: index.php#contact");
+    header("location: index.html#contact");
 
     $output = '<div class="alert alert-success">
                 <h5>Thankyou! for contacting us, We\'ll get back to you soon!</h5>
