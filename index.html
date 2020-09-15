@@ -21,6 +21,20 @@
 
     <title>Soufian El Habib </title>
 
+    <style>
+
+        /* "A6FEF8 Color to use in selection */
+        .form-group input {
+            border-radius: 16px;
+        }
+        #contactbtn{
+            text-decoration: none;
+            color: #282936;
+        }
+       
+
+    </style>
+
 </head>
 <body>
     <!-- Test Main NavBar -->
@@ -110,11 +124,12 @@
                       <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                       </span>
-                      <span class="button-text"> Télecharger Mon CV </span>
+
+                      <span class="button-text">Télecharger Mon CV </span>
                     </button>
 
                     <!-- Contact Button -->
-                    <button class="btn-share m-2">
+                    <button class="btn-share m-2 button-text-contact">
                         <span class="secondCircle" aria-hidden="true">
                             <span class="icone-section" >
                                 <span class="btn-text"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -128,13 +143,13 @@
                                     <a href="https://github.com/soufian250" target="_blank"
                                       ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                       width="28" height="28"
-                                      viewBox="0 0 172 172"
-                                      ><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M28.66667,28.66667c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v12.41569l7.16667,4.49316l7.16667,4.49316l57.33333,35.93132l57.33333,-35.69336l7.16667,-4.46517l7.16667,-4.45117v-12.72363c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM28.66667,43h114.66667v5.51497l-57.33333,35.67936l-57.33333,-35.93132zM14.33333,72.32455v56.67545c0,7.91917 6.41417,14.33333 14.33333,14.33333h114.66667c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-56.39551l-14.33333,8.91634v47.47917h-114.66667v-47.68913z"></path></g></g></svg></a>
+                                      viewBox="0 0 172 172">
+                                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M28.66667,28.66667c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v12.41569l7.16667,4.49316l7.16667,4.49316l57.33333,35.93132l57.33333,-35.69336l7.16667,-4.46517l7.16667,-4.45117v-12.72363c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM28.66667,43h114.66667v5.51497l-57.33333,35.67936l-57.33333,-35.93132zM14.33333,72.32455v56.67545c0,7.91917 6.41417,14.33333 14.33333,14.33333h114.66667c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-56.39551l-14.33333,8.91634v47.47917h-114.66667v-47.68913z"></path></g></g></svg></a>
                                   </li>
                                 </ul>
                             </span>
                         </span>
-                        <span class="text-button">dddd</span>
+                        <span class="text-button"><a href="#contact">CONTACTEZ MOI</a></span>
                       </button>
                   </div>
 
@@ -346,10 +361,9 @@
                 <div class="col-md-6">
                    <!-- Contact-->
                     <h5>ENVOYEZ-MOI UN MESSAGE</h5>
-                    <div id="boxTest" class="boxTest" style="height: 120px;width: 120px; border: 1px solid greenyellow;">Test</div>
                         
-                        <div class="card-body px-4" id="contactForm" style="border: 1px solid #b1a7a7; border-radius: 21px;">
-                          <form action="form.php" method="POST">
+                        <div class="card-body px-4" style="border: 1px solid #b1a7a7; border-radius: 21px;">
+                          <form action="form.php" class="" method="POST">
                             <div class="form-group">
                               <!-- Show the success message here -->
                             </div>
@@ -377,27 +391,6 @@
                           </form>
                         </div>
 
-                       
-
-                    <!-- <form method="POST" action="form.php" class="pt-4">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" style="background-color: #F7F7F7;" name="name" id="name" placeholder="Entrer votre nom" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Email</label>
-                            <input  type="email" style="cursor: pointer;" name="email"  id="email" class="bg-light form-control" placeholder="exemple@gmail.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Sujet</label>
-                            <input type="text" name="Sujet" style="background-color: #F7F7F7;"  id="subject" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Message</label>
-                            <textarea  name="message" id="message" style="background-color: #F7F7F7;" class="form-control"></textarea>
-                        </div>
-                        <input type="submit" name="submit" value="Send" class="btn btn-danger btn-block" id="sendBtn">
-                    </form> -->
                 </div>
                 <!-- Map-->
                 <div class="col-md-6"> 
