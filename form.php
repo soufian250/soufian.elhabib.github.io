@@ -46,6 +46,8 @@ if (isset($_POST['submit'])) {
     $output = '<div class="alert alert-success">
                 <h5>Thankyou! for contacting us, We\'ll get back to you soon!</h5>
                 </div>';
+                
+                header("location: index.html#contact");
     } catch (Exception $e) {
     $output = '<div class="alert alert-danger">
                 <h5>' . $e->getMessage() . '</h5>
