@@ -150,7 +150,7 @@
                         <li class="list-group-item"><strong>Date de naissance: </strong> 16/10/1996</li>
                         <li class="list-group-item"><strong>Nationalité: </strong> Marocaine</li>
                         <li class="list-group-item"><strong>Télephone: </strong> (+212)6 20 61 83 66</li>
-                        <li class="list-group-item"><strong>Email: </strong> elhabib.soufian@gmail.com</li>
+                        <li class="list-group-item"><strong>Email: </strong> <a style="text-decoration: none; color:black;" href="mailto:elhabib.soufian@gmail.com">elhabib.soufian@gmail.com</a> </li>
                       </ul>
                 </div>
             </div>
@@ -344,37 +344,69 @@
         <div class="container">
             <div class="row">
                 <!-- Form -->
-                <div class="col-md-6"> <!-- Contact-->
+                <div class="col-md-6">
+                   <!-- Contact-->
                     <h5>ENVOYEZ-MOI UN MESSAGE</h5>
-                    <form method="POST" action="form.php" id="contact-form" class="pt-4">
+                        <div class="card-body px-4" id="contactForm" style="border: 1px solid #b1a7a7; border-radius: 21px;">
+                          <form action="form.php" method="POST">
+                            <div class="form-group">
+                              <!-- Show the success message here -->
+                            </div>
+                            <div class="form-group">
+                              <label for="name">Name</label>
+                              <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="email">E-Mail</label>
+                              <input type="email" name="email" id="email" class="form-control" placeholder="Enter E-Mail" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="subject">Subject</label>
+                              <input type="text" name="subject" id="subject" class="form-control" placeholder="Enter Subject"
+                                required>
+                            </div>
+                            <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea name="message" id="message" rows="5" class="form-control" placeholder="Write Your Message"
+                                required></textarea>
+                            </div>
+                            <div class="form-group">
+                              <input type="submit" name="submit" value="ENVOYER" class="btn btn-success btn-block" id="sendBtn">
+                            </div>
+                          </form>
+                        </div>
+                        
+
+                    <!-- <form method="POST" action="form.php" class="pt-4">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" style="background-color: #F7F7F7;" name="name" id="" class="form-control">
+                            <input type="text" style="background-color: #F7F7F7;" name="name" id="name" placeholder="Entrer votre nom" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="name">Email</label>
-                            <input  type="email" style="cursor: pointer;" name="email" id="" class="bg-light form-control" placeholder="exemple@gmail.com">
+                            <input  type="email" style="cursor: pointer;" name="email"  id="email" class="bg-light form-control" placeholder="exemple@gmail.com">
                         </div>
                         <div class="form-group">
                             <label for="name">Sujet</label>
-                            <input type="text" name="Sujet" style="background-color: #F7F7F7;" id="" class="form-control">
+                            <input type="text" name="Sujet" style="background-color: #F7F7F7;"  id="subject" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="name">Message</label>
-                            <textarea  name="message" id="" style="background-color: #F7F7F7;" class="form-control"></textarea>
+                            <textarea  name="message" id="message" style="background-color: #F7F7F7;" class="form-control"></textarea>
                         </div>
-                        <button type="submit" onclick="show()" class="btn btn-success btn-lg">ENVOYER</button>
-                    </form>
+                        <input type="submit" name="submit" value="Send" class="btn btn-danger btn-block" id="sendBtn">
+                    </form> -->
                 </div>
                 <!-- Map-->
                 <div class="col-md-6"> 
                     <div class="row my-3">
                         <div class="col-sm-6">
                             <img style="width: 35px; height: 38px;" class="pb-1" src="phone.png" alt="" srcset="">
-                            <strong>Télephone : </strong> 0620618366
+                            <strong>Télephone : </strong> <a style="text-decoration: none; color:black;" href="tel:0620618366">06 20 61 83 66</a>
+                           
                         </div>
                         <div class="col-sm-6">
-                            <img style="width: 35px; height: 42px;" class="pb-1" src="location.png" alt="" srcset="">
+                            <img style="width: 32px; height: 36px;" class="pb-1" src="location.png" alt="" srcset="">
                             <strong>Adresse : </strong> Qu Mouazarne Ait Ourir
                         </div>
 
