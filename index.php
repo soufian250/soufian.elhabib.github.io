@@ -27,9 +27,7 @@
     <!-- Test Main NavBar -->
         <nav class="nav">
             <div class="container">
-                <div class="logo">
-                    <a href="#">My Logo</a>
-                </div>
+            <a href="#acceuil"> <img id="myLogo" src="logo_Transparent.svg" alt="Soufian El habib"></a>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
                         <li class="nav-item">
