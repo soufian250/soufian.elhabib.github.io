@@ -865,9 +865,7 @@ button.btn-share {
     text-transform: uppercase;
 }
 
-  button:hover .button-text-contact {
-    color: #fff;
-  }
+  
   
 .button-download {
   position: relative;
@@ -937,7 +935,7 @@ button.learn-more .button-text {
   right: 0;
   bottom: 0;
   padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
+  margin: 0 0 0 3rem;
   color: #282936;
   font-weight: 700;
   line-height: 1.6;
@@ -952,9 +950,7 @@ button:hover .secondCircle {
     width: 100%;
 }
 
-button:hover .text-button{
-    color: #fff;
-}
+
 /* ************** */
 
 button:hover .circle {
@@ -1065,7 +1061,11 @@ button:hover .button-text {
 /* Logo */
 
 #myLogo{
-    width: 7%;
+    width: 70px;
     position: relative;
     right: 2.5%;
+}
+
+.button-text-contact:hover #contact-link{
+    color: white;
 }
