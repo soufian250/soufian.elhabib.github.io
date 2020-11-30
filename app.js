@@ -29,7 +29,7 @@ function AffectProgress(percent) {
 				color: '#999',
 				position: 'absolute',
 				right: '0',
-				top: '20px',
+				top: '5px',
 				padding: 0,
 				margin: 0,
 				transform: null
@@ -61,7 +61,7 @@ function AffectProgress2(percent) {
 				color: '#999',
 				position: 'absolute',
 				right: '0',
-				top: '20px',
+				top: '5px',
 				padding: 0,
 				margin: 0,
 				transform: null
@@ -93,7 +93,7 @@ function AffectProgress3(percent) {
 				color: '#999',
 				position: 'absolute',
 				right: '0',
-				top: '20px',
+				top: '5px',
 				padding: 0,
 				margin: 0,
 				transform: null
@@ -125,7 +125,7 @@ function AffectProgress4(percent) {
 				color: '#999',
 				position: 'absolute',
 				right: '0',
-				top: '20px',
+				top: '5px',
 				padding: 0,
 				margin: 0,
 				transform: null
@@ -157,7 +157,7 @@ function AffectProgress5(percent) {
 				color: '#999',
 				position: 'absolute',
 				right: '0',
-				top: '20px',
+				top: '5px',
 				padding: 0,
 				margin: 0,
 				transform: null
@@ -189,7 +189,7 @@ function AffectProgress6(percent) {
 				color: '#999',
 				position: 'absolute',
 				right: '0',
-				top: '20px',
+				top: '5px',
 				padding: 0,
 				margin: 0,
 				transform: null
