@@ -1,10 +1,10 @@
 function showWithPercent() {
-	var percent = 0.5;
+	var percent = 0.65;
 	var percent2 = 0.8;
 	var percent3 = 0.7;
-	var percent4 = 0.87;
-	var percent5 = 0.66;
-	var percent6 = 0.93;
+	var percent4 = 0.65;
+	var percent5 = 0.76;
+	var percent6 = 0.83;
 	AffectProgress(percent);
 	AffectProgress2(percent2);
 	AffectProgress3(percent3);
