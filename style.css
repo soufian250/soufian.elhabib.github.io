@@ -1073,3 +1073,39 @@ button:hover .button-text {
 }
 
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: DodgerBlue; */
+    align-items: center;
+   
+}
+
+  .flex-container > div {
+    width: 100px;
+    margin: 34px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 15px;
+    transition: all 1s;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        transition: all 1s;
+    }
+  }
+
+
+  @media only screen and (min-width: 740px) {
+    .flex-container > div {
+        width: 100%;
+        margin: 34px;
+        text-align: center;
+        line-height: 55px;
+        font-size: 15px;
+        transition: all 1s;
+      }
+  }
