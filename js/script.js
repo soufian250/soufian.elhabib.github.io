@@ -19,11 +19,15 @@ $(document).ready(function() {
 	});
 
 	typewriter
-		.typeString('DÉVELOPPEUR WEB')
+		.typeString('<strong> Bonjour... </strong>')
+		.pauseFor(500)
+		.deleteAll()
+		.typeString("Je m'appelle </br><strong style='font-size:1.6em'>Soufian El Habib!</strong>")
+		.pauseFor(1000)
+		.deleteAll()
+		.typeString("Je suis </br><strong style='font-size:1.6em'>DÉVELOPPEUR WEB💻</strong>")
 		.pauseFor(2500)
 		.deleteAll()
-		.typeString('<strong>Soufian El Habib!</strong>')
-		.pauseFor(2500)
 		.start();
 });
 
